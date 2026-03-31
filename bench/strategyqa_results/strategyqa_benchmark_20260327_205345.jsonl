@@ -1,0 +1,20 @@
+{
+  "question_num": 1,
+  "question": "Could boolean algebra be described as binary?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 371.60286259651184,
+  "facts": "Binary options tend to have 2 instead of 10 as a base.  Binary directly describes something composed of 2 things. ",
+  "retry_count": 0
+}
+{
+  "question_num": 2,
+  "question": "Would lumberjacks get full after eating three dosa?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 153.41836762428284,
+  "facts": "Dosa are thin rice pancakes from South India. One dosa is approximately 110 calories. The average lumberjack would eat 8000 calories per day.",
+  "retry_count": 0
+}

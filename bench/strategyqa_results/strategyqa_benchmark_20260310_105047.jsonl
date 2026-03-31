@@ -1,0 +1,610 @@
+{
+  "question_num": 1,
+  "question": "Could boolean algebra be described as binary?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 2.003897190093994,
+  "facts": "Binary options tend to have 2 instead of 10 as a base.  Binary directly describes something composed of 2 things. ",
+  "retry_count": 0
+}
+{
+  "question_num": 2,
+  "question": "Would lumberjacks get full after eating three dosa?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 219.166996717453,
+  "facts": "Dosa are thin rice pancakes from South India. One dosa is approximately 110 calories. The average lumberjack would eat 8000 calories per day.",
+  "retry_count": 0
+}
+{
+  "question_num": 3,
+  "question": "Would a member of the United States Air Force get a discount at Dunkin Donuts?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 5.924755096435547,
+  "facts": "The United States Air Force is part of the military. Dunkin Donuts offers a military discount. ",
+  "retry_count": 0
+}
+{
+  "question_num": 4,
+  "question": "In a hypothetical race between a Swallow and an American Woodcock, would the Swallow win?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 941.6741516590118,
+  "facts": "Swallow can fly about 30-40mph.  The American woodcock can fly approximately 5mph. ",
+  "retry_count": 0
+}
+{
+  "question_num": 5,
+  "question": "Were number of states in Ancient Greece underwhelming compared to US states in 1900?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 97.85487604141235,
+  "facts": "In the year 1900 there were 42 US states. Ancient Greece had several hundred relatively independent city-states called poleis.",
+  "retry_count": 0
+}
+{
+  "question_num": 6,
+  "question": "Can petroleum jelly be used as fuel in a car?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 879.019672870636,
+  "facts": "Petroleum is a highly reactive liquid used to power cars. Petroleum jelly is a solid substance used as an ointment on cuts and scrapes to promote healing. Petroleum jelly does not oxidize on exposure to the air and is not readily acted on by chemical reagents.",
+  "retry_count": 0
+}
+{
+  "question_num": 7,
+  "question": "Did Julia Roberts practice blast beats as a child?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 5.229463338851929,
+  "facts": "Julia Roberts played the clarinet in her school band. Blast beats are a drum beat that originated in hardcore punk and grindcore, and is often associated with certain styles of extreme metal, namely black metal and death metal.",
+  "retry_count": 0
+}
+{
+  "question_num": 8,
+  "question": "Is myocardial infarction a brain problem?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 3.8102149963378906,
+  "facts": "Myocardial infarction is a problem in the heart. The equivalent in the brain would be similar to a stroke.",
+  "retry_count": 0
+}
+{
+  "question_num": 9,
+  "question": "Would a hedgehog avoid animals without a spinal cord?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 24.754365921020508,
+  "facts": "A hedgehog has a wide ranging diet including birds, toads, slugs, and snails. Slugs are animals known as invertebrates because they have no backbones.",
+  "retry_count": 0
+}
+{
+  "question_num": 10,
+  "question": "Can The Hobbit be read in its entirety in four minutes?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 55.83527088165283,
+  "facts": "The Hobbit is a 95,356 word book by J.R.R. Tolkien. Speed reader Howard Stephen Berg could read at the speed of 25,000 words per minute. Speed reader Maria Teresa Calderon from the Philippines claimed to be able to read 80,000 words per minute with 100% comprehension.",
+  "retry_count": 1
+}
+{
+  "question_num": 11,
+  "question": "Could Plato have agreed with the beliefs of Jainism?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 755.6160955429077,
+  "facts": "One principle of reality in Jainism is karma, or asrava. Jainism began around 500 B.C. Plato was born around 428 B.C., so he was alive while Jainism existed. Plato believed in karma and reincarnation.",
+  "retry_count": 0
+}
+{
+  "question_num": 12,
+  "question": "Can Michael Bloomberg fund the debt of Micronesia for a decade?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 13.636778831481934,
+  "facts": "Michael Bloomberg is worth an estimated 60 billion dollars as of 2020. Micronesia has annual expenses of nearly 200 million dollars.",
+  "retry_count": 0
+}
+{
+  "question_num": 13,
+  "question": "Is Benjamin Franklin a prime candidate to have his statues removed by Black Lives Matter movement?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 48.324596881866455,
+  "facts": "The Black Lives Matter movement is a social movement advocating for racial equality. Benjamin Franklin, a famous founding father, has his image on many monuments and on American currency. Members of the Black Lives Matter movement petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans. Benjamin Franklin's 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves. Benjamin Franklin owned two slaves, George and King, who worked as personal servants.",
+  "retry_count": 0
+}
+{
+  "question_num": 14,
+  "question": "Are sables related to wolverines?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 8.517693281173706,
+  "facts": "The sable is a species of marten, which make up the genus Martes. Wolverines are from the genus Gulo. Both the Martes and the Gulo are from the family Mustelidae.",
+  "retry_count": 0
+}
+{
+  "question_num": 15,
+  "question": "Does Jerry Seinfeld hang out at the Budweiser Party Deck?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 5.810086727142334,
+  "facts": "The Budweiser Party Deck is a social gathering spot in Yankee Stadium Yankee Stadium is home to the New York Yankees baseball team Jerry Seinfeld is a fan of the New York Mets",
+  "retry_count": 0
+}
+{
+  "question_num": 16,
+  "question": "Do you often hear Marco Polo's name shouted near water?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 1.503089427947998,
+  "facts": "\"Marco Polo\" is a popular game among children and adults played while swimming. To play \"Marco Polo\", one person shouts \"Marco\" and the other shouts \"Polo\" while avoiding being tagged.",
+  "retry_count": 0
+}
+{
+  "question_num": 17,
+  "question": "Can you hunt Iberian wolves in the Southern United States?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 657.1083679199219,
+  "facts": "The Iberian wolf inhabits northern Portugal and northwestern Spain. Portugal and Spain are not located in the Southern United States.",
+  "retry_count": 0
+}
+{
+  "question_num": 18,
+  "question": "Can a New Yorker get their eyes checked by Rand Paul legally?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 228.22611737251282,
+  "facts": "Rand Paul is a senator from Kentucky. Rand Paul was an ophthalmologist in Kentucky with ABO certification. The National Board of Ophthalmology does not recognize ABO certification. Kentucky does not require ophthalmologists to be certified. NY ophthalmologists must have approved application for licensure certifications.",
+  "retry_count": 0
+}
+{
+  "question_num": 19,
+  "question": "Did the Nepalese Civil War take place near India?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 5.411893367767334,
+  "facts": "The Nepalese Civil War happened in Nepal. Nepal is a country that shares a border with India.",
+  "retry_count": 0
+}
+{
+  "question_num": 20,
+  "question": "Will Chuck Norris be a nonagenarian by time next leap year after 2020 happens?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 104.15053129196167,
+  "facts": "A nonagenarian is a person between 90 and 99 years of age. Chuck Norris is 80 years old in 2020. The next leap year after 2020 is 2024. Chuck Norris will be 84 in 2024.",
+  "retry_count": 0
+}
+{
+  "question_num": 21,
+  "question": "Would Snowdon mountain be a piece of cake for Tenzing Norgay?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 32.45343732833862,
+  "facts": "Tenzing Norgay was a mountaineer that climbed Mount Everest in 1953. Snowdon Mountain has a peak of 3,560 feet. Mount Everest has a peak of over 29,000 feet.",
+  "retry_count": 0
+}
+{
+  "question_num": 22,
+  "question": "Is the letter D influenced by the shape of ancient doors?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 28.29371953010559,
+  "facts": "D is the fourth letter of the Latin alphabet D is a descendent of the ancient Phoenician Dalet Dalet was represented by a glyph of a door",
+  "retry_count": 0
+}
+{
+  "question_num": 23,
+  "question": "Did John Lennon listen to Compact discs?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 222.54049444198608,
+  "facts": "The Compact disc was released in 1982 by Philips and Sony. John Lennon was killed on December 8, 1980.",
+  "retry_count": 2
+}
+{
+  "question_num": 24,
+  "question": "Do the Egyptian pyramids look the same from outside as they did when new?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 15.433193922042847,
+  "facts": "When originally built, the Great Pyramids had a thin surface of limestone covering the bricks, making them shine in the sun. Over the centuries, the limestone layer has been removed by thieves and erosion, exposing the more common stone bricks underneath.",
+  "retry_count": 0
+}
+{
+  "question_num": 25,
+  "question": "Does March begin on the same day of the week as February during leap years?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 3.006319999694824,
+  "facts": "During normal years, February has exactly 28 days, so March begins on the same day of the week as February. However, on leap years, February has an extra day, so March begins the next day of the week from whichever day started February.",
+  "retry_count": 0
+}
+{
+  "question_num": 26,
+  "question": "Is blonde hair green eyed Sara Paxton considered a Latino?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 239.50093054771423,
+  "facts": "Sara Paxton is an American actress. Latino's are people with ancestral ties to Latin America. Sara Paxton was born to an Irish/English father and a Mexican/Spanish/Chilean mother. Mexico is a country that is part of Latin America.",
+  "retry_count": 0
+}
+{
+  "question_num": 27,
+  "question": "Can the history of art be learned by an amoeba?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 389.6431646347046,
+  "facts": "The history of art is the academic study of the development of human artistic expression over time Academic study requires human-level intelligence An amoeba is a single-celled organism ",
+  "retry_count": 0
+}
+{
+  "question_num": 28,
+  "question": "Does it seem like the Gorillaz is composed of more members than they have?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 146.47422766685486,
+  "facts": "In music videos for Gorillaz songs, there are four animated bandmates playing. Gorillaz is a collaboration of 3 band members.",
+  "retry_count": 0
+}
+{
+  "question_num": 29,
+  "question": "Did Ice make people rich?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 8.716193675994873,
+  "facts": "Trading ice was common in the 1800s. People created industries harvesting and selling ice. Some ice sellers became extremely rich. ",
+  "retry_count": 0
+}
+{
+  "question_num": 30,
+  "question": "Did Polar Bears roam around in Ancient Greece?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 9.218302965164185,
+  "facts": "Polar Bears live in the Arctic, with temperatures that can get as low as -35 degrees celsius. Ancient Greece had an average temperature of 24 degrees celsius.",
+  "retry_count": 0
+}
+{
+  "question_num": 31,
+  "question": "Is Alistair Darling in favor of Scottish independence?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 22.746042251586914,
+  "facts": "Alistair Darling was the chair of the Better Together Campaign. Better Together was the principal campaign for a No vote in the 2014 Scottish independence referendum, advocating Scotland continuing to be part of the United Kingdom. ",
+  "retry_count": 0
+}
+{
+  "question_num": 32,
+  "question": "Is ID required to get all medications from all pharmacies?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 7.817749261856079,
+  "facts": "Controlled substance prescriptions can require an ID for pickup depending on state law. Non controlled substances can be picked up without ID by anybody who knows the patient information. State laws regarding pharmacies ID restrictions are not the same across the country.",
+  "retry_count": 0
+}
+{
+  "question_num": 33,
+  "question": "Do many fans of J.K Rowling know who Alan Rickman is?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 7.818089246749878,
+  "facts": "J.K Rowling wrote the Harry Potter series. Alan Rickman performed the role of Severus Snape throughout all 8 Harry Potter films.",
+  "retry_count": 0
+}
+{
+  "question_num": 34,
+  "question": "Does the Constitution of the Philippines copy text from the British constitution?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 13.638613224029541,
+  "facts": "The Constitution of the Philippines is a document ratified in 1987 The British constitution is not an actual document, but a collection of legal statutes, precedent, political custom and social convention",
+  "retry_count": 0
+}
+{
+  "question_num": 35,
+  "question": "Is sunscreen unhelpful for the condition that killed Bob Marley?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 371.46973419189453,
+  "facts": "Bob Marley died of acral lentiginous melanoma  Acral lentiginous melanoma occurs on skin that may not have any sun exposure ",
+  "retry_count": 1
+}
+{
+  "question_num": 36,
+  "question": "Did mongoose come from later period than rhinos?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 20.86127495765686,
+  "facts": "The mongoose originated  in the Neogene geological period. Rhinos are from the Paleogene geological period. The Paleogene period spans 43 million years from the end of the Cretaceous Period 66 million years ago to the beginning of the Neogene Period.",
+  "retry_count": 0
+}
+{
+  "question_num": 37,
+  "question": "Is 2018 Ashland, Oregon population inadequate to be a hypothetical military division?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 54.191861629486084,
+  "facts": "The 2018 population of Ashland Oregon was 21,263 people. The number of soldiers in a military division is between 10,000 and 25,000 people.",
+  "retry_count": 0
+}
+{
+  "question_num": 38,
+  "question": "Is it wise to feed a Snickers bar to a poodle?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 11.320834636688232,
+  "facts": "A Snickers bar contains chocolate. Chocolate is harmful or even toxic to dogs. Poodles are a breed of dog.",
+  "retry_count": 0
+}
+{
+  "question_num": 39,
+  "question": "Is it best to avoid kola nuts with colitis?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 11.625125408172607,
+  "facts": "Colitis is a disease in which the colon becomes inflamed. Many things can trigger colitis, including dairy, alcohol, and caffeine. The kola nut is the fruit of the tropical cola tree that contains caffeine inside.",
+  "retry_count": 0
+}
+{
+  "question_num": 40,
+  "question": "Does Woody Allen await the Second Coming?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 55.30371713638306,
+  "facts": "The Second Coming refers to Jesus Christ returning to earth Christians and Muslims believe in Jesus Christ Woody Allen is Jewish",
+  "retry_count": 0
+}
+{
+  "question_num": 41,
+  "question": "Would Temujin hypothetically be jealous of Charlemagne's conquests?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 5.010603904724121,
+  "facts": "Temujin was the birth name of Genghis Khan. Genghis Khan founded the Mongol Empire which was the largest land empire in world history. Charlemagne, King of the Franks, conquered most of Western Europe. At its peak, the Mongol Empire had 110 million people. Charlemagne's empire had around 20 million people at its height.",
+  "retry_count": 0
+}
+{
+  "question_num": 42,
+  "question": "If Goofy were a pet, would he need heartworm prevention?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 9.627505779266357,
+  "facts": "Goofy is an anthropomorphic dog character.  Dogs require regular heartworm prevention. ",
+  "retry_count": 0
+}
+{
+  "question_num": 43,
+  "question": "Is number of different US President's in 1800s a lucky number in Hong Kong?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 21.345305919647217,
+  "facts": "There were 24 different US President's in the 1800s. 4 is an unlucky number in Chinese numerology. Where East Asian and Western cultures blend, such as in Hong Kong, it is possible in some buildings that the thirteenth floor along with all the floors with 4s to be omitted. ",
+  "retry_count": 0
+}
+{
+  "question_num": 44,
+  "question": "Does Biochemistry study gluons?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 8.416389226913452,
+  "facts": "Biochemistry studies role, function, and structure of biomolecules. Gluon, the so-called messenger particle of the strong nuclear force, which binds sub-atomic particles known as quarks within the protons and neutrons of stable matter as well as within heavier, short-lived particles created at high energies. biomolecules are comprised of atoms. ",
+  "retry_count": 0
+}
+{
+  "question_num": 45,
+  "question": "Can fish get Tonsillitis?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 11.925747156143188,
+  "facts": "Tonsils are a pair of soft tissue masses located at the rear of the throat Tonsillitis is the inflammation of tonsils. Fish do not have tonsils. Tonsils are only found in mammals. ",
+  "retry_count": 0
+}
+{
+  "question_num": 46,
+  "question": "Would a blooming onion be possible with a shallot?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 6.815440893173218,
+  "facts": "A blooming onion is a dish for sharing, featuring a sliced and deep fried onion made to resemble petals. A shallot is very small and would only make a few \"petals\"",
+  "retry_count": 0
+}
+{
+  "question_num": 47,
+  "question": "Would a packed Wembley stadium be likely to have a descendant of the Mongols inside?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 18.83854341506958,
+  "facts": "Wembley stadium has a capacity of 90,000 people. The Mongols were an ethnic group that dominated the 13th and 14th centuries. Genghis Khan was the founder of the Mongol Empire. Geneticists have determined that 1 in every 200 men are descended from Genghis Khan.",
+  "retry_count": 0
+}
+{
+  "question_num": 48,
+  "question": "Is dyslexia the most common intellectual disability in US?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 10.521873712539673,
+  "facts": "An intellectual disability is reflected in below-average IQ and a lack of skills needed for daily living. Learning disabilities are weaknesses in certain academic skills. usually, Reading, writing and math. Dyslexia is characterized by difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. Thomas Jefferson, George Washington, and John F. Kennedy were successful presidents while being dyslexic.",
+  "retry_count": 0
+}
+{
+  "question_num": 49,
+  "question": "Are Brian Cranston and Saoirse Ronan's combined Emmy Awards a prime number?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 110.59587788581848,
+  "facts": "Brian Cranston has won 6 Emmy Awards. Saoirse Ronan has won 0 Emmy awards. 6 is divisible by the following numbers: 1,2,3, and 6.",
+  "retry_count": 0
+}
+{
+  "question_num": 50,
+  "question": "Is most store bought rice pudding made with brown rice?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 10.227496147155762,
+  "facts": "Brown rice is more expensive than white rice.  Most store bought rice pudding is white in color. Brown rice, when cooked, is light brown in color.",
+  "retry_count": 0
+}
+{
+  "question_num": 51,
+  "question": "Do depressed people travel to the Golden Gate Bridge often?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 8.518969058990479,
+  "facts": "The Golden Gate Bridge is one of the most popular suicide spots in the USA. Suicide is often caused by severe depression.",
+  "retry_count": 0
+}
+{
+  "question_num": 52,
+  "question": "Would a snakebite hypothetically be a threat to T-1000?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 13.621573686599731,
+  "facts": "Snakebites are dangerous because they inject venom into blood streams. The T-1000 is an android from the movie series Terminator. Androids are machines made of wires and computer parts.",
+  "retry_count": 0
+}
+{
+  "question_num": 53,
+  "question": "Is Kobe's famous animal product used in a BLT?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 10.01853346824646,
+  "facts": "Kobe's famous animal product is Kobe beef. The animal product used in a BLT is bacon. Beef is derived from cows. Bacon is derived from pigs.",
+  "retry_count": 0
+}
+{
+  "question_num": 54,
+  "question": "Is the Asian black bear multicolored?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 38.26340961456299,
+  "facts": "The Asian black bear is an animal that lives in habitats with trees. Multicolored refers to anything that is composed of more than one color. The Sian black bear has a black coat with a white V-shaped patch.",
+  "retry_count": 0
+}
+{
+  "question_num": 55,
+  "question": "Could  jockey win Triple Crown between Eid al-Fitr endpoints?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 17.23427653312683,
+  "facts": "The Triple Crown is an accomplishment in which a jockey wins three specific races. The three Triple Crown races are: Preakness, Kentucky Derby, and Belmont Stakes. The three Triple Crown races take place weeks apart. Eid al-Fitr is a Muslim holiday that lasts for three consecutive days.",
+  "retry_count": 0
+}
+{
+  "question_num": 56,
+  "question": "Can an adult human skull hypothetically pass through the birth canal?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 3.006924867630005,
+  "facts": "The largest baby ever born was 22 pounds.  The average human skull weighs between 10 and 11 pounds.",
+  "retry_count": 0
+}
+{
+  "question_num": 57,
+  "question": "Did Jerry Seinfeld have reason to cheer in 1986?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 8.31437611579895,
+  "facts": "Jerry Seinfeld is a fan of the New York Mets baseball team The New York Mets won a World Series title in 1986",
+  "retry_count": 0
+}
+{
+  "question_num": 58,
+  "question": "Are the Vietnamese people a great untapped resource for NBA players?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 21.83407235145569,
+  "facts": "Vietnam was ranked as one of the countries with the shortest people on average, in 2019. The average height of a Vietnamese man is 5 feet 4.74 inches. The average height of an NBA player in 2018 was 6 foot 7 inches tall.",
+  "retry_count": 1
+}
+{
+  "question_num": 59,
+  "question": "Are Aldi's foods discounted due to being out of date?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 11.72377347946167,
+  "facts": "Aldi cuts costs by charging for bags, buying in bulk, and by avoiding brand name items.  Aldi removes spoiled or expired foods from their shelves immediately upon identification.",
+  "retry_count": 0
+}
+{
+  "question_num": 60,
+  "question": "Can Darth Vader hypothetically outdunk Bill Walton without using The Force?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 3.6069560050964355,
+  "facts": "The Force allows a Jedi to move objects with their mind. Darth Vader is 6'2\" tall. Former basketball player Bill Walton is a towering 6'11\" tall. The NBA basketball rim is 10 feet high.",
+  "retry_count": 0
+}
+{
+  "question_num": 61,
+  "question": "Is a curling iron necessary in curling?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 5.4101128578186035,
+  "facts": "A curling iron is a tool used to make the hair curly using heat. The sport of curling requires curling brooms, stones (rocks), and curling shoes. Changing the structure of your hair has no practical benefit to the sport of curling.",
+  "retry_count": 0
+}

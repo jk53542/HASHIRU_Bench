@@ -7,34 +7,77 @@ from datetime import datetime
 import re
 from datasets import load_dataset
 
+from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX
+
+# Gradio client HTTP timeout (seconds). Default handler fetch + predict can exceed 30s when
+# HASHIRU is busy (long CEO traces, semantic metrics, GPU). Tune via env if needed.
+_GRADIO_TIMEOUT = float(os.environ.get("HASHIRU_BENCH_GRADIO_TIMEOUT", "300"))
+
+# Optional pause between questions (seconds). Per-question Client() reconnect was removed —
+# it re-hit /config with a ~30s default timeout and failed while the server was still busy.
+_INTER_Q_SLEEP = float(os.environ.get("HASHIRU_BENCH_STRATEGYQA_INTER_QUESTION_SLEEP", "5"))
+
+
+def _make_gradio_client(url: str) -> Client:
+    try:
+        return Client(url, httpx_kwargs={"timeout": _GRADIO_TIMEOUT})
+    except TypeError:
+        return Client(url)
+
+
 def sanitize_response(input_str):
     """
     Extract yes/no answer from the response
     Handles various formats like: {"answer": "yes"}, answer: "no", etc.
     """
+    if not input_str:
+        return None
     # Convert to lowercase for case-insensitive matching
     input_lower = input_str.lower()
-    
+
     # Try to match structured formats first
     patterns = [
-        r'{"answer":\s*"(yes|no)"}',
-        r'"answer":\s*"(yes|no)"',
-        r'answer:\s*"(yes|no)"',
-        r'{"choice":\s*"(yes|no)"}',
-        r'"choice":\s*"(yes|no)"'
+        r'\{"answer"\s*:\s*"(yes|no)"\s*\}',
+        r'"answer"\s*:\s*"(yes|no)"',
+        r"'answer'\s*:\s*'(yes|no)'",
+        r"answer\s*:\s*['\"]?(yes|no)['\"]?",
+        r'\{"choice"\s*:\s*"(yes|no)"\s*\}',
+        r'"choice"\s*:\s*"(yes|no)"',
     ]
-    
+
     for pattern in patterns:
         match = re.search(pattern, input_lower)
         if match:
             return match.group(1)
-    
+
     # Fallback: look for explicit yes/no in the response
     if "yes" in input_lower and "no" not in input_lower:
         return "yes"
     elif "no" in input_lower and "yes" not in input_lower:
         return "no"
-    
+
+    return None
+
+
+def extract_answer_from_chat_history(history):
+    """Find the latest assistant message that contains a parseable yes/no (CEO may emit many tool steps)."""
+    if not history:
+        return None
+    for m in reversed(history):
+        if m.get("role") != "assistant":
+            continue
+        content = m.get("content", "")
+        if isinstance(content, (list, tuple)):
+            parts = []
+            for p in content:
+                if isinstance(p, str):
+                    parts.append(p)
+                elif isinstance(p, dict) and "text" in p:
+                    parts.append(str(p.get("text", "")))
+            content = "\n".join(parts)
+        ans = sanitize_response(str(content))
+        if ans:
+            return ans
     return None
 
 def load_strategyqa_data(split="train", num_samples=None):
@@ -71,9 +114,10 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
     out_path = os.path.join(out_dir, f"strategyqa_benchmark_{timestamp}.jsonl")
     print(f"Writing results to {out_path}")
     
-    # Initialize client
+    # Single client for the whole run (reconnecting after every question often timed out:
+    # Client() re-fetches /config while HASHIRU was still busy from the prior turn.)
     try:
-        client = Client("http://127.0.0.1:7860/")
+        client = _make_gradio_client(os.environ.get("HASHIRU_GRADIO_URL", "http://127.0.0.1:7860/"))
         client.predict(
             modeIndexes=["ENABLE_AGENT_CREATION","ENABLE_LOCAL_AGENTS","ENABLE_CLOUD_AGENTS",
                         "ENABLE_TOOL_CREATION","ENABLE_TOOL_INVOCATION","ENABLE_RESOURCE_BUDGET",
@@ -99,10 +143,10 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
         facts = row.get('facts', []) if 'facts' in row else []
         
         # Create prompt for the multiagent system
-        prompt = "You will be asked to answer strategic questions requiring multi-step thinking. " \
+        prompt = CEO_FORCE_AGENTS_PREFIX + "\n" + "You will be asked to answer strategic questions requiring multi-step thinking. " \
                 "This question requires careful analysis and step-by-step reasoning. " \
                 "Think through the problem logically and provide your final answer. " \
-                "Feel free to use or create agents or tools that you need." \
+                "You MUST use agents. You may use tools only to support agents (e.g., retrieval), not as a replacement." \
                 f"You have been asked the following question: {question} " \
                 "Your answer must be either 'yes' or 'no'. " \
                 "Reply with your answer in the format: {\"answer\":\"<YES_OR_NO>\"}. " \
@@ -123,8 +167,8 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
                 while not job.done():
                     time.sleep(0.1)
                 
-                response, _history = job.outputs()[-1]
-                agent_resp = sanitize_response(_history[-1].get("content", ""))
+                _preview, _history = job.outputs()[-1]
+                agent_resp = extract_answer_from_chat_history(_history)
                 
                 if agent_resp:
                     break
@@ -171,20 +215,9 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
         print(f"Question {question_number}/{num_questions} - "
               f"Score: {correct_resp}/{total_processed} ({accuracy:.1f}%) - "
               f"Time: {elapsed:.2f}s")
-        
-        time.sleep(30)  # Reduced from 50s for faster testing
-        try:
-            print("Re init client")
-            client = Client("http://127.0.0.1:7860/")
-            client.predict(
-                modeIndexes=["ENABLE_AGENT_CREATION","ENABLE_LOCAL_AGENTS","ENABLE_CLOUD_AGENTS",
-                            "ENABLE_TOOL_CREATION","ENABLE_TOOL_INVOCATION","ENABLE_RESOURCE_BUDGET",
-                            "ENABLE_ECONOMY_BUDGET"],
-                api_name="/update_model"
-            )
-        except Exception as e:
-            print(f"Error connecting to client: {e}")
-            return
+
+        if _INTER_Q_SLEEP > 0 and question_number < num_questions:
+            time.sleep(_INTER_Q_SLEEP)
     
     # Final summary
     final_accuracy = (correct_resp / total_processed) * 100

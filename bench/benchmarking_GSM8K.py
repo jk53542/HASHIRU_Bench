@@ -44,12 +44,17 @@ def get_last_assistant_content(resp):
 
     return ""
 
-def benchmark_gsm8k(num_samples=1, offset=0):
+def benchmark_gsm8k(num_samples=1, offset=0, require_agent_delegation=False):
     """
-    Benchmark agent performance on GSM8K dataset
+    Benchmark agent performance on GSM8K dataset.
+
     Args:
         num_samples: Number of samples to test
         offset: Number of samples to skip before starting the benchmark
+        require_agent_delegation: If True, the prompt instructs the system to delegate
+            the math to a created agent and not to use tools (e.g. Python) itself for
+            the computation. Use this to test that agents (not the CEO/orchestrator)
+            are doing the work.
     """
     # Load GSM8K dataset
     random.seed(42)
@@ -91,15 +96,27 @@ def benchmark_gsm8k(num_samples=1, offset=0):
         answer = sample['answer']
         answer_only = sample['answer'].split("####")[1].strip()  # Extract answer before any explanation
         
-        prompt = f"Help: You are a student agent taking a math test. " \
-                f"Feel free to use tools or agents to help you answer the question. " \
-                f"You can decide what tools or agents to use. " \
-                f"Your goal is to answer the question correctly. " \
-                f"You have been asked the following question: {question} " \
-                f"You have to provide the answer in the format: <ANSWER> " \
-                f"Do not include any explanation or reasoning in your response. " \
-                f"Reply with the answer only, without any additional text. " \
+        if require_agent_delegation:
+            prompt = (
+                f"You must solve this math question by delegating to an agent. "
+                f"Do NOT use Python, calculator, or other math tools yourself. "
+                f"Create or use an existing agent that is a math expert, send the question to that agent, "
+                f"and report back only the final numerical answer. "
+                f"Question: {question} "
+                f"Reply with the answer in the format: <ANSWER> (number only, no explanation)."
+            )
+        else:
+            prompt = (
+                f"Help: You are a student agent taking a math test. "
+                f"Feel free to use tools or agents to help you answer the question. "
+                f"You can decide what tools or agents to use. "
+                f"Your goal is to answer the question correctly. "
+                f"You have been asked the following question: {question} "
+                f"You have to provide the answer in the format: <ANSWER> "
+                f"Do not include any explanation or reasoning in your response. "
+                f"Reply with the answer only, without any additional text. "
                 f"The response format should be: <ANSWER>."
+            )
 
         while True:
             job = client.submit(
@@ -155,9 +172,15 @@ if __name__ == "__main__":
         default=0,
         help="Zero-based row index to start from (default: 0)."
     )
+    parser.add_argument(
+        "--require_agent_delegation",
+        action="store_true",
+        help="Require the system to delegate math to an agent (do not use tools yourself). Use to verify agents are doing the work."
+    )
     args = parser.parse_args()
 
     benchmark_gsm8k(
         num_samples=args.num_samples,
-        offset=args.offset
+        offset=args.offset,
+        require_agent_delegation=args.require_agent_delegation,
     )

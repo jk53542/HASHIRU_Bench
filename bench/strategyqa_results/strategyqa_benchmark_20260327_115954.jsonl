@@ -1,0 +1,10 @@
+{
+  "question_num": 1,
+  "question": "Could boolean algebra be described as binary?",
+  "correct_answer": "yes",
+  "agent_resp": null,
+  "is_correct": false,
+  "time_elapsed": 520.363029718399,
+  "facts": "Binary options tend to have 2 instead of 10 as a base.  Binary directly describes something composed of 2 things. ",
+  "retry_count": 3
+}

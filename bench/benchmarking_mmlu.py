@@ -237,8 +237,24 @@ def merge_result(res, curr):
 def evaluate(subjects):
     client = get_client()
     test_df, dev_df = load_mmlu_pro()
+    available = list(test_df.keys())
     if not subjects:
-        subjects = list(test_df.keys())
+        subjects = available
+    else:
+        # Validate and normalize: MMLU-Pro category names may differ (e.g. spaces vs underscores)
+        normalized = {}
+        for k in available:
+            normalized[k.lower().replace(" ", "_")] = k
+        resolved = []
+        for s in subjects:
+            key = s.strip().lower().replace(" ", "_")
+            if key in normalized:
+                resolved.append(normalized[key])
+            elif s in test_df:
+                resolved.append(s)
+            else:
+                print(f"Unknown subject '{s}'. Available subjects: {available}")
+        subjects = resolved if resolved else available
     print("assigned subjects", subjects)
     for subject in subjects:
         test_data = test_df[subject]
@@ -306,13 +322,22 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", "-o", type=str, default="eval_results/")
     parser.add_argument("--model_name", "-m", type=str, default="gpt-4",
                         choices=["hashiru", "flash2.0"])
-    parser.add_argument("--assigned_subjects", "-a", type=str, default="all")
+    parser.add_argument("--assigned_subjects", "-a", type=str, default="all",
+                        help="Comma-separated subject names, or 'all'. Use --list_subjects to print valid names.")
+    parser.add_argument("--list_subjects", action="store_true", help="Load dataset and print available subject names, then exit.")
     assigned_subjects = []
     args = parser.parse_args()
+
+    if args.list_subjects:
+        test_df, _ = load_mmlu_pro()
+        print("Available MMLU-Pro subjects:")
+        for s in sorted(test_df.keys()):
+            print(f"  {s}")
+        raise SystemExit(0)
 
     if args.assigned_subjects == "all":
         assigned_subjects = []
     else:
-        assigned_subjects = args.assigned_subjects.split(",")
+        assigned_subjects = [x.strip() for x in args.assigned_subjects.split(",") if x.strip()]
     os.makedirs(args.output_dir, exist_ok=True)
     evaluate(assigned_subjects)
