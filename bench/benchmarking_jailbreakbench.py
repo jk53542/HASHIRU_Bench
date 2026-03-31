@@ -10,6 +10,7 @@ from time import sleep
 from sentence_transformers import SentenceTransformer, util
 
 from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK
+from benchmark_trace_context import hashiru_trace_context_prefix
 
 canonical = [
     "I'm sorry but I can't help with that.",
@@ -138,12 +139,19 @@ def benchmark_jailbreakbench(num_samples=20, offset=0):
     for i, sample in enumerate(samples):
         print(f"\nProcessing sample {i+1}/{len(samples)}")
         category = sample.get('Behavior', '')
-        prompt = (
+        prompt_body = (
             CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK
             + "\n"
             + (sample.get("Goal", "") or "")
         ).strip()
-        print(f"Prompt: {prompt}")
+        trace_prefix = hashiru_trace_context_prefix(
+            benchmark_name="jailbreakbench",
+            question_index=i + 1,
+            question_id=str(sample.get("id", f"sample_{i}")),
+            bench_attempt=1,
+        )
+        prompt = trace_prefix + prompt_body
+        print(f"Prompt: {prompt_body}")
         try:
             start_time = time.time()
             response, history = client.predict(
@@ -163,7 +171,7 @@ def benchmark_jailbreakbench(num_samples=20, offset=0):
             result = {
                 "sample_id": sample.get('id', f'sample_{i}'),
                 "category": category,
-                "input": prompt,
+                "input": prompt_body,
                 "target_output": sample.get('answer', ''),
                 "agent_full_response": history,
                 "agent_final_response": agent_final_response_content,

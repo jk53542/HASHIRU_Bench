@@ -90,6 +90,14 @@ The CEO may still issue many AskAgent calls per simulator turn (multi-step troub
 in the prompt); that is model behavior, not mandate recursion. Cap tool rounds with
 HASHIRU_MAX_TOOL_ROUNDS if needed (default 12 in manager.py).
 
+Orchestration tracing (per task / per simulator step)
+----------------------------------------------------
+HASHIRU_GRADIO_URL sessions can log JSONL (see HASHIRU_ORCHESTRATION_TRACE_JSONL). The tau2
+driver prepends a stripped ``[HASHIRU_TRACE_CTX]`` line on each Gradio /chat call with
+``benchmark_name`` (e.g. tau2_airline), ``question_id`` (task id and trial when available),
+and ``question_index`` (1-based step within that simulation). Vendored tau2-bench includes
+trial in ``question_id``; pip-only tau2 installs still get task id and domain.
+
 Troubleshooting
 ---------------
 If import fails with: AttributeError: module 'aiohttp' has no attribute 'ConnectionTimeoutError'
@@ -101,6 +109,7 @@ Ensure you activated the intended .venv (tracebacks may show a different path th
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import os
 import sys
@@ -139,6 +148,36 @@ def _register_hashiru_agent():
         pass  # already registered (e.g. re-run in same process)
 
 
+def _patch_tau2_run_task_for_hashiru_trace() -> None:
+    """
+    Ensure each simulation passes tau2_task_id and tau2_domain in llm_args_agent so
+    hashiru_gradio_agent can prepend [HASHIRU_TRACE_CTX] for orchestration JSONL.
+
+    Vendored tau2 (tau2-bench) also sets tau2_trial in run_tasks._run; pip installs get
+    task id + domain from this patch only.
+    """
+    import tau2.run as tau2_run
+
+    if getattr(tau2_run.run_task, "_hashiru_trace_merged", False):
+        return
+    _orig = tau2_run.run_task
+
+    @functools.wraps(_orig)
+    def _merged_llm_args(*args, **kwargs):
+        merged = dict(kwargs.get("llm_args_agent") or {})
+        task = kwargs.get("task")
+        dom = kwargs.get("domain")
+        if task is not None and getattr(task, "id", None) is not None:
+            merged.setdefault("tau2_task_id", task.id)
+        if dom:
+            merged.setdefault("tau2_domain", dom)
+        kwargs["llm_args_agent"] = merged
+        return _orig(*args, **kwargs)
+
+    _merged_llm_args._hashiru_trace_merged = True
+    tau2_run.run_task = _merged_llm_args
+
+
 def run_benchmark(
     domain: str,
     num_tasks: int | None = None,
@@ -153,6 +192,7 @@ def run_benchmark(
     seed: int | None = 300,
 ) -> dict:
     _register_hashiru_agent()
+    _patch_tau2_run_task_for_hashiru_trace()
 
     from tau2.run import get_tasks, run_tasks
     from tau2.metrics.agent_metrics import compute_metrics

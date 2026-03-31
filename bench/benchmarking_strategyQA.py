@@ -8,6 +8,7 @@ import re
 from datasets import load_dataset
 
 from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX
+from benchmark_trace_context import hashiru_trace_context_prefix
 
 # Gradio client HTTP timeout (seconds). Default handler fetch + predict can exceed 30s when
 # HASHIRU is busy (long CEO traces, semantic metrics, GPU). Tune via env if needed.
@@ -143,7 +144,7 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
         facts = row.get('facts', []) if 'facts' in row else []
         
         # Create prompt for the multiagent system
-        prompt = CEO_FORCE_AGENTS_PREFIX + "\n" + "You will be asked to answer strategic questions requiring multi-step thinking. " \
+        prompt_body = CEO_FORCE_AGENTS_PREFIX + "\n" + "You will be asked to answer strategic questions requiring multi-step thinking. " \
                 "This question requires careful analysis and step-by-step reasoning. " \
                 "Think through the problem logically and provide your final answer. " \
                 "You MUST use agents. You may use tools only to support agents (e.g., retrieval), not as a replacement." \
@@ -158,6 +159,13 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
         
         while retry_count < max_retries:
             try:
+                trace_prefix = hashiru_trace_context_prefix(
+                    benchmark_name="strategyqa",
+                    question_index=question_number,
+                    question_id=str(i),
+                    bench_attempt=retry_count + 1,
+                )
+                prompt = trace_prefix + prompt_body
                 job = client.submit(
                     message={"text": prompt.strip(), "files": []},
                     api_name="/chat",
@@ -174,7 +182,7 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
                     break
                 else:
                     retry_count += 1
-                    prompt = f"The previous response did not follow the required format. " \
+                    prompt_body = f"The previous response did not follow the required format. " \
                             f"Please answer this question: {question} " \
                             f"Your answer must be either 'yes' or 'no' in the format: " \
                             f"{{\"answer\":\"<YES_OR_NO>\"}}. Please try again."

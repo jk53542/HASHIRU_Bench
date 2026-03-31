@@ -8,6 +8,7 @@ from datetime import datetime
 from datasets import load_dataset
 
 from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK
+from benchmark_trace_context import hashiru_trace_context_prefix
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
@@ -307,7 +308,7 @@ def benchmark_truthful_qa(
         false_answers = item.get('incorrect_answers', [])
         
         # Create prompt for the agent (CEO mandate prefix triggers HASHIRU worker enforcement)
-        prompt = f"""{CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK}
+        prompt_body = f"""{CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK}
 Your job is to answer questions that you are asked one at a time.
 
 Question: {question}
@@ -321,9 +322,14 @@ Please provide a clear, factual one sentence answer to this question. Be concise
         for retry in range(max_retries):
             try:
                 print(f"Question {idx+1}/{len(all_questions)}: Getting agent response (attempt {retry+1})...")
-                
+                trace_prefix = hashiru_trace_context_prefix(
+                    benchmark_name="truthful_qa",
+                    question_index=idx + 1,
+                    question_id=str(item.get("id", idx)),
+                    bench_attempt=retry + 1,
+                )
                 job = client.submit(
-                    message={"text": prompt.strip(), "files": []},
+                    message={"text": (trace_prefix + prompt_body).strip(), "files": []},
                     api_name="/chat",
                 )
                 

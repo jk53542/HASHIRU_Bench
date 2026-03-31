@@ -16,6 +16,7 @@ from typing import Any, List, Optional
 from gradio_client import Client
 
 from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX_CORE
+from benchmark_trace_context import hashiru_trace_context_prefix
 
 # Tau2 imports (optional until used)
 try:
@@ -273,6 +274,8 @@ if TAU2_AVAILABLE:
             super().__init__(tools=tools, domain_policy=domain_policy, llm=llm, llm_args=llm_args or {})
             self._gradio_url = _gradio_url_from_env_or_args(self.llm_args)
             self._client: Optional[Client] = None
+            # Per-simulation Gradio /chat calls (one HASHIRU user turn per tau2 agent step).
+            self._trace_gradio_turn: int = 0
 
         @property
         def client(self) -> Client:
@@ -336,6 +339,26 @@ if TAU2_AVAILABLE:
                 + _MANDATORY_PREFIX
                 + (next_user_text or "(Continue.)")
             ).strip()
+
+            self._trace_gradio_turn += 1
+            la = self.llm_args or {}
+            tau_domain = la.get("tau2_domain")
+            bench_name = la.get("hashiru_benchmark_name") or (
+                f"tau2_{tau_domain}" if tau_domain else "tau2"
+            )
+            task_id = la.get("tau2_task_id")
+            trial_idx = la.get("tau2_trial")
+            if task_id is not None:
+                qid = f"{task_id}_trial{trial_idx + 1}" if trial_idx is not None else str(task_id)
+            else:
+                qid = None
+            trace_prefix = hashiru_trace_context_prefix(
+                benchmark_name=bench_name,
+                question_index=self._trace_gradio_turn,
+                question_id=qid,
+                bench_attempt=1,
+            )
+            message_text = (trace_prefix + message_text).strip()
 
             valid_tool_names = {getattr(t, "name", str(t)) for t in self.tools}
             env_tools_str = _format_env_tools(self.tools)
