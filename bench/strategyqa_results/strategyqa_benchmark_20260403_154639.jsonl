@@ -1,0 +1,40 @@
+{
+  "question_num": 1,
+  "question": "Could boolean algebra be described as binary?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 189.36867237091064,
+  "facts": "Binary options tend to have 2 instead of 10 as a base.  Binary directly describes something composed of 2 things. ",
+  "retry_count": 0
+}
+{
+  "question_num": 2,
+  "question": "Would lumberjacks get full after eating three dosa?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 124.06528115272522,
+  "facts": "Dosa are thin rice pancakes from South India. One dosa is approximately 110 calories. The average lumberjack would eat 8000 calories per day.",
+  "retry_count": 0
+}
+{
+  "question_num": 3,
+  "question": "Would a member of the United States Air Force get a discount at Dunkin Donuts?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 351.3855698108673,
+  "facts": "The United States Air Force is part of the military. Dunkin Donuts offers a military discount. ",
+  "retry_count": 0
+}
+{
+  "question_num": 4,
+  "question": "In a hypothetical race between a Swallow and an American Woodcock, would the Swallow win?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 331.30350732803345,
+  "facts": "Swallow can fly about 30-40mph.  The American woodcock can fly approximately 5mph. ",
+  "retry_count": 0
+}

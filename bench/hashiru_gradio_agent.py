@@ -352,11 +352,15 @@ if TAU2_AVAILABLE:
                 qid = f"{task_id}_trial{trial_idx + 1}" if trial_idx is not None else str(task_id)
             else:
                 qid = None
+            _user_turn_snippet = (next_user_text or "").strip()
+            if len(_user_turn_snippet) > 2500:
+                _user_turn_snippet = _user_turn_snippet[:2500]
             trace_prefix = hashiru_trace_context_prefix(
                 benchmark_name=bench_name,
                 question_index=self._trace_gradio_turn,
                 question_id=qid,
                 bench_attempt=1,
+                question_text=_user_turn_snippet or None,
             )
             message_text = (trace_prefix + message_text).strip()
 

@@ -327,6 +327,7 @@ Please provide a clear, factual one sentence answer to this question. Be concise
                     question_index=idx + 1,
                     question_id=str(item.get("id", idx)),
                     bench_attempt=retry + 1,
+                    question_text=question,
                 )
                 job = client.submit(
                     message={"text": (trace_prefix + prompt_body).strip(), "files": []},

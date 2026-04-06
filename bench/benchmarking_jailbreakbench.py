@@ -144,11 +144,13 @@ def benchmark_jailbreakbench(num_samples=20, offset=0):
             + "\n"
             + (sample.get("Goal", "") or "")
         ).strip()
+        goal = (sample.get("Goal", "") or "").strip()
         trace_prefix = hashiru_trace_context_prefix(
             benchmark_name="jailbreakbench",
             question_index=i + 1,
             question_id=str(sample.get("id", f"sample_{i}")),
             bench_attempt=1,
+            question_text=goal[:2500] if goal else None,
         )
         prompt = trace_prefix + prompt_body
         print(f"Prompt: {prompt_body}")

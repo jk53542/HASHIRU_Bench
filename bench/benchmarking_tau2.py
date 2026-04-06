@@ -131,6 +131,24 @@ if str(_bench_dir) not in sys.path:
     sys.path.insert(0, str(_bench_dir))
 
 
+def _ensure_default_tau2_data_dir() -> None:
+    """
+    If TAU2_DATA_DIR is unset, point at vendored HASHIRU_Bench/bench/tau2-bench/data when present.
+
+    Otherwise pip-installed tau2 often resolves DATA_DIR to a non-existent site-packages path.
+    Must run before any ``import tau2`` (see run_benchmark order).
+    """
+    if (os.environ.get("TAU2_DATA_DIR") or "").strip():
+        return
+    vendored = (_bench_dir / "tau2-bench" / "data").resolve()
+    if (vendored / "tau2" / "domains").is_dir():
+        os.environ["TAU2_DATA_DIR"] = str(vendored)
+        print(
+            f"TAU2_DATA_DIR unset; using vendored tasks under {vendored}",
+            file=sys.stderr,
+        )
+
+
 # Register HASHIRU agent with tau2 before any tau2 run imports that use the registry.
 def _register_hashiru_agent():
     try:
@@ -191,6 +209,7 @@ def run_benchmark(
     max_concurrency: int = 1,
     seed: int | None = 300,
 ) -> dict:
+    _ensure_default_tau2_data_dir()
     _register_hashiru_agent()
     _patch_tau2_run_task_for_hashiru_trace()
 
@@ -270,36 +289,42 @@ def main():
     )
     parser.add_argument(
         "--num_tasks",
+        "--num-tasks",
         type=int,
         default=None,
         help="Limit number of tasks (default: all in split).",
     )
     parser.add_argument(
         "--num_trials",
+        "--num-trials",
         type=int,
         default=1,
         help="Number of trials per task (default: 1).",
     )
     parser.add_argument(
         "--user_llm",
+        "--user-llm",
         type=str,
         default="gpt-4.1",
         help="LiteLLM model name for the user simulator (default: gpt-4.1).",
     )
     parser.add_argument(
         "--gradio_url",
+        "--gradio-url",
         type=str,
         default=os.environ.get("HASHIRU_GRADIO_URL", "http://127.0.0.1:7860"),
         help="HASHIRU Gradio URL (default: env HASHIRU_GRADIO_URL or http://127.0.0.1:7860).",
     )
     parser.add_argument(
         "--task_split",
+        "--task-split",
         type=str,
         default="base",
         help="Task split (default: base for full benchmark set).",
     )
     parser.add_argument(
         "--task_ids",
+        "--task-ids",
         type=str,
         default=None,
         nargs="+",
@@ -307,18 +332,21 @@ def main():
     )
     parser.add_argument(
         "--save_to",
+        "--save-to",
         type=str,
         default=None,
         help="Base name for tau2 simulation output (default: auto in results/).",
     )
     parser.add_argument(
         "--max_steps",
+        "--max-steps",
         type=int,
         default=100,
         help="Max steps per simulation (default: 100).",
     )
     parser.add_argument(
         "--max_concurrency",
+        "--max-concurrency",
         type=int,
         default=1,
         help="Max concurrent simulations (default: 1).",

@@ -164,6 +164,7 @@ def benchmark_strategyqa(df, out_dir="strategyqa_results", num_questions=10):
                     question_index=question_number,
                     question_id=str(i),
                     bench_attempt=retry_count + 1,
+                    question_text=question,
                 )
                 prompt = trace_prefix + prompt_body
                 job = client.submit(
