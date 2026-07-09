@@ -1,0 +1,17 @@
+# trace_a=trace_20260406_003728_13082.jsonl (100-Q both-metrics run)
+# trace_b=trace_20260414_200844_3218330.jsonl (50-Q neither run)
+# benchmark=strategyqa  overlap_count=12
+# Columns: text_hash  char_len  question_id_in_trace_a  question_id_in_trace_b  question_snippet
+#
+f0e346ab8562	75	76	76	Are Brian Cranston and Saoirse Ronan's combined Emmy Awards a prime number?
+484b9d3eb93a	33	78	78	Are sables related to wolverines?
+af62aa8abdf3	60	63	63	Could jockey win Triple Crown between Eid al-Fitr endpoints?
+a5099ca03e75	55	69	69	Could you drive a Rowe 550 to the 2008 Summer Olympics?
+a9cdcd85532d	98	70	70	Does highest US Court have enough seats for every Prime Minister of the United Kingdom since 1952?
+bf8e31f3daff	74	54	54	Does it seem like the Gorillaz is composed of more members than they have?
+e2ba259caba1	56	72	72	If Goofy were a pet, would he need heartworm prevention?
+a7479e862803	50	60	60	Is "A Tale of Two Cities" a popular science novel?
+da93020087da	79	44	44	Is it more expensive to run for President of India than to buy a new iPhone 11?
+c8f07ceb87a9	47	55	55	Was the amount of spinach Popeye ate unhealthy?
+cda8804b0e84	89	77	77	Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?
+e7ea2ed8c5fe	62	81	81	Would you spend less on your food at Aldi than at Whole Foods?

@@ -124,6 +124,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="Passed to benchmark_truthfullQA.py --offset (default: 0).",
     )
     parser.add_argument(
+        "--strategyqa-num-questions",
+        type=int,
+        default=100,
+        help=(
+            "Passed to benchmarking_strategyQA.py --num-questions "
+            "(default: 100, deterministic contiguous slice)."
+        ),
+    )
+    parser.add_argument(
+        "--strategyqa-offset",
+        type=int,
+        default=0,
+        help="Passed to benchmarking_strategyQA.py --offset (default: 0).",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print commands only; do not execute.",
@@ -152,7 +167,17 @@ def main() -> int:
                 str(args.jailbreak_offset),
             ],
         ),
-        ("StrategyQA", [py, "benchmarking_strategyQA.py"]),
+        (
+            "StrategyQA",
+            [
+                py,
+                "benchmarking_strategyQA.py",
+                "--num-questions",
+                str(args.strategyqa_num_questions),
+                "--offset",
+                str(args.strategyqa_offset),
+            ],
+        ),
         (
             "TruthfulQA",
             [

@@ -1,0 +1,42 @@
+Other benchmarks — semantic metrics / traces index (read-only, for A/B curation)
+================================================================================
+
+Use this when a benchmark is not (yet) wired to per-question `semantic_metrics_logs` traces
+in the same way as StrategyQA or GSM8K.
+
+IFBench (instruction following)
+--------------------------------
+  Code: bench/benchmarking_ifbench.py
+  Local eval JSONL: bench/IFBench/eval/hashiru_20260319_*/ifbench_input_subset.jsonl
+  Prompt-matched orchestration A/B (no `benchmark_name: ifbench`): see ifbench_ablation_sd_se_vs_off_playbyplay.txt (regenerate from this script). Exports are not tagged `ifbench` in \\wsl$\Ubuntu-22.04\home\knowltjo\hashiru_modified\HASHIRU_Bench\bench\results\semantic_metrics_logs; matching is by prompt substring on `user_turn_excerpt`.
+
+ToolBench
+---------
+  Code: bench/benchmarking_toolbench.py, ToolBench/ server.
+  README: bench/README_TOOLBENCH.md
+  No ifbench-style trace shard in \\wsl$\Ubuntu-22.04\home\knowltjo\hashiru_modified\HASHIRU_Bench\bench\results\semantic_metrics_logs for ToolBench in this repo snapshot.
+
+Tau-2 (τ²) agent simulations
+-----------------------------
+  Artifacts under results/: tau2_retail_*, tau2_airline_*, tau2_telecom_*_summary*.jsonl
+  (17 files in this tree). These are **aggregate** summary rows, not per-question
+  orchestration jsonl. Example keys: domain, num_tasks, num_trials, metrics, simulations_count.
+  For AskAgent/AskMultipleAgents + semantic_entropy/semantic_density play-by-plays, add a trace
+  export from the τ² driver if you need line-level A/B; summaries alone are not enough.
+
+Paper review (accept/reject)
+----------------------------
+  Results: bench/results/paper_review_benchmark_*.jsonl
+  Compare runs with `semantic_metrics_called: true` vs `false` in the JSONL (see inventory). There is no matching `paper_review` `benchmark_name` in semantic_metrics_logs/ in the inventory; item-level A/B for the same `paper_id` would require two result rows + optional trace export.
+
+JailbreakBench / TruthfulQA / MMLU
+----------------------------------
+  See: jailbreakbench_ablation_semantic_playbyplay.txt, truthfulqa_ablation_semantic_playbyplay.txt,
+  mmlu_law_ablation_semantic_playbyplay.txt, gsm8k_ablation_semantic_playbyplay.txt, and
+  strategyqa_ablation_semantic_helped_playbyplay.txt (full four-way ablation).
+  Cross-trace question match (by text): _trace_question_text_matcher.py; example TSV:
+  strategyqa_trace_text_overlap_20260406_vs_200844.txt
+  Curated wrong+wrong (SD/SE vs off): confidently_wrong_sd_se_ablation_examples.txt
+  Text-matched (question string): truthfulqa_text_matched_runs_playbyplay.txt,
+  mmlu_pro_text_matched_runs_playbyplay.txt, ifbench_eval_results_playbyplay.txt,
+  ifbench_ablation_sd_se_vs_off_playbyplay.txt

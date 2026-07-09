@@ -1,0 +1,77 @@
+[
+  {
+    "benchmark": "StrategyQA",
+    "artifact": "HASHIRU_Bench\\bench\\strategyqa_results\\strategyqa_benchmark_20260419_173019.jsonl",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": 2290,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null
+  },
+  {
+    "benchmark": "TruthfulQA",
+    "artifact": "HASHIRU_Bench\\bench\\truthful_qa_results\\truthful_qa_benchmark_20260407_012538.jsonl",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": 817,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null
+  },
+  {
+    "benchmark": "GSM8K",
+    "artifact": "HASHIRU_Bench\\bench\\eval_results\\gsm8k_test_20260408_193756.jsonl",
+    "subset_sum_s": 11002.23,
+    "subset_n": 100,
+    "full_n": 1319,
+    "extrapolated_full_s": 145119.48,
+    "extrapolated_full_h": 40.31
+  },
+  {
+    "benchmark": "JailbreakBench",
+    "artifact": "HASHIRU_Bench\\HASHIRU_results\\jailbreakbench\\hashiru\\jailbreakbench_benchmark_20250523_103038.jsonl",
+    "subset_sum_s": 4.39,
+    "subset_n": 1,
+    "full_n": 200,
+    "extrapolated_full_s": 877.9,
+    "extrapolated_full_h": 0.24
+  },
+  {
+    "benchmark": "IFBench",
+    "artifact": "HASHIRU_Bench\\bench\\IFBench\\eval\\hashiru_20260319_153849\\hashiru-responses.jsonl",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": 294,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null
+  },
+  {
+    "benchmark": "ToolBench",
+    "artifact": "HASHIRU_Bench\\results\\toolbench\\toolbench_20260324_162520_orig\\result\\toolbench_hashiru.jsonl",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": null,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null,
+    "note": "Full corpus size not fixed (HF split / local JSON); linear extrapolation needs chosen reference N."
+  },
+  {
+    "benchmark": "Tau2",
+    "artifact": "HASHIRU_Bench\\bench\\results\\tau2_airline_20260402_120149_summary.jsonl",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": null,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null,
+    "note": "Full runtime = chosen domain task count \u00d7 trials; define N from tau2 tasks.json + --num_trials."
+  },
+  {
+    "benchmark": "MMLU-Pro law",
+    "artifact": "HASHIRU_Bench\\bench\\eval_results\\law_result.json",
+    "subset_sum_s": 0.0,
+    "subset_n": 0,
+    "full_n": 20,
+    "extrapolated_full_s": null,
+    "extrapolated_full_h": null,
+    "note": null
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "question_num": 1,
+  "question": "Was ship that recovered Apollo 13 named after a World War II battle?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 7.210342645645142,
+  "facts": "Apollo 13 was recovered by the USS Iwo Jima. Iwo Jima was captured from the Imperial Japanese Army during World War II by the US in a conflict called the Battle of Iwo Jima.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 2,
+  "question": "Is the tibia necessary to win the Stanley Cup?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 39.75112318992615,
+  "facts": "The Stanley Cup is the championship trophy of the National Hockey League Ice hockey is a game played by individuals wearing ice skates to move around a frozen playing field The tibia is a leg bone Legs are required in order to use ice skates",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 3,
+  "question": "Could the Powepuff Girls make the background to the Azerbaijani flag?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 11.039674758911133,
+  "facts": "The national flag of the Republic of Azerbaijan is a horizontal tricolour featuring three equally sized fesses of blue, red, and green Each of the Powerpuff Girls creates a trail of a different color when she flies: Bubbles makes blue, Blossom makes red, and Buttercup makes green.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 4,
+  "question": "Are eagles and young bears both used as labels for skills-training youth groups?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 6.418436050415039,
+  "facts": "A young bear is a cub. Boy Scouts is a skill-training youth group that includes divisions such as Cub Scouts and Eagle Scouts",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 5,
+  "question": "Would an Olympic athlete be tired out after running a mile?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 7.042761564254761,
+  "facts": "The Olympic standard for men in running one mile is 4 minutes, 19 seconds.  The Olympic standard for women in running one mile is at least 4 minutes and 40 seconds. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 6,
+  "question": "Would a goblin shark eat at Crossroads Kitchen?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 9.515273571014404,
+  "facts": "Goblin sharks are carnivores that subsist on other fish, cephalopods and crustaceans Crossroads Kitchen is a vegan restaurant in Los Angeles Vegans do not consume any animal products",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 7,
+  "question": "Was  Godfrey of Bouillon an Islamaphobe?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 5.93181037902832,
+  "facts": " Godfrey of Bouillon lead troops during the Prince's Crusade. The Prince's Crusade was an attempt by Europeans to \"take back\" the city of Jerusalem from Islamic hands.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}

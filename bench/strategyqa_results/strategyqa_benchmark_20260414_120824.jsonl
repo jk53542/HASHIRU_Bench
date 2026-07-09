@@ -1,0 +1,126 @@
+{
+  "question_num": 1,
+  "question": "Would Ringo Starr avoid the pot roast at a restaurant?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 114.10744762420654,
+  "facts": "Ringo Starr is a vegetarian. Vegetarianism is the practice of abstaining from the consumption of meat. Pot roast is a braised beef dish made by browning a roast-sized piece of beef before slow cooking the meat in a covered dish, sometimes with vegetables, in or over liquid.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 2,
+  "question": "Does Iphone have more iterations than Samsung Galaxy?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1359.3797087669373,
+  "facts": "As of 2020 the latest Iphone is Iphone 11. As of 2020 the latest Samsung Galaxy phone is the Samsung Galaxy S20.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 3,
+  "question": "Does Jason have anything in common with Dr. Disrespect?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 332.27240085601807,
+  "facts": "Jason cheated on Medea with Creusa Dr. Disrespect cheated on his wife with another woman",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 4,
+  "question": "Would you hire someone with dyscalculia to do surveying work?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 109.80468964576721,
+  "facts": "Dyscalculia is a learning disability in math. People with dyscalculia have trouble with math at many levels.  Surveyors work with elements of geometry, trigonometry, regression analysis, physics, engineering, metrology, programming languages, and the law.  Geometry and trigonometry are types of advanced mathematics.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 5,
+  "question": "Is it more expensive to run for President of India than to buy a new iPhone 11?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 198.0978274345398,
+  "facts": "Candidates for the presidency of India must pay a deposit of Rs 15,000 A brand new iPhone 11 costs Rs 67,300",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 6,
+  "question": "Can Arnold Schwarzenegger deadlift an adult Black rhinoceros?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 227.23491430282593,
+  "facts": "Arnold Schwarzenegger deadlifted 710 pounds in a competition. The world deadlift record is 1,104 pounds, set by Game of Thrones actor Hafthor Bjornsson. The weight of an adult Black rhinoceros is between 1,800 \u2013 3,100 pounds.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 7,
+  "question": "Did any citizen of San Antonio vote for Boris Johnson?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 115.64721751213074,
+  "facts": "San Antonio is a city in Texas in the United States of America Boris Johnson is the Prime Minister of the UK Only UK and commonwealth citizens may vote in UK elections",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 8,
+  "question": "Was Jackson Pollock trained by Leonardo da Vinci?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 68.54677677154541,
+  "facts": "Leonardo lived during the Italian Renaissance in the 17th century. Jackson Pollock lived during the 20th century.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 9,
+  "question": "Was Kurt Cobain's death indirectly caused by Daniel LeFever?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 145.81905674934387,
+  "facts": "Kurt Cobain committed suicide with a shotgun. Daniel LeFever was the inventor of the American hammerless shotgun.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}

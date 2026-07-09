@@ -1,0 +1,41 @@
+Semantic metric AUROC report
+============================================================
+Target: predict incorrect graded final answer (label=1 if wrong).
+Aggregation: max entropy, -min density, any quality concern per question.
+Bootstrap samples: 500, seed=42
+
+
+## GSM8K (gsm8k)
+  Semantic entropy (max): AUROC=0.555 [0.302, 0.790] (n=100, wrong=7, right=93)
+  Neg. min density: AUROC=0.708 [0.443, 0.916] (n=100, wrong=7, right=93)
+  Quality concern (any): AUROC=0.578 [0.422, 0.782] (n=100, wrong=7, right=93)
+
+## StrategyQA (strategyqa)
+  Semantic entropy (max): AUROC=0.625 [0.394, 0.833] (n=24, wrong=6, right=18)
+  Neg. min density: AUROC=0.870 [0.636, 1.000] (n=24, wrong=6, right=18)
+  Quality concern (any): AUROC=0.778 [0.550, 0.929] (n=24, wrong=6, right=18)
+
+## TruthfulQA (truthfulqa)
+  Semantic entropy (max): AUROC=0.501 [0.381, 0.629] (n=90, wrong=51, right=39)
+  Neg. min density: AUROC=0.634 [0.524, 0.745] (n=90, wrong=51, right=39)
+  Quality concern (any): AUROC=0.610 [0.533, 0.697] (n=90, wrong=51, right=39)
+
+## MuSiQue (musique)
+  Semantic entropy (max): AUROC=0.434 [0.315, 0.537] (n=97, wrong=52, right=45)
+  Neg. min density: AUROC=0.470 [0.344, 0.590] (n=97, wrong=52, right=45)
+  Quality concern (any): AUROC=0.531 [0.433, 0.630] (n=97, wrong=52, right=45)
+
+## HotpotQA (hotpotqa)
+  Semantic entropy (max): AUROC=0.468 [0.359, 0.577] (n=100, wrong=46, right=54)
+  Neg. min density: AUROC=0.483 [0.364, 0.597] (n=100, wrong=46, right=54)
+  Quality concern (any): AUROC=0.483 [0.389, 0.580] (n=100, wrong=46, right=54)
+
+## GPQA (diamond) (gpqa)
+  Semantic entropy (max): AUROC=0.424 [0.190, 0.698] (n=22, wrong=15, right=7)
+  Neg. min density: AUROC=0.490 [0.254, 0.740] (n=22, wrong=15, right=7)
+  Quality concern (any): AUROC=0.510 [0.316, 0.705] (n=22, wrong=15, right=7)
+
+## MMLU-Pro (law subset) (mmlu_law)
+  Semantic entropy (max): SKIPPED (single class only; n_joined=16, n_used=16, incorrect=16, correct=0)
+  Neg. min density: SKIPPED (single class only; n_joined=16, n_used=16, incorrect=16, correct=0)
+  Quality concern (any): SKIPPED (single class only; n_joined=16, n_used=16, incorrect=16, correct=0)

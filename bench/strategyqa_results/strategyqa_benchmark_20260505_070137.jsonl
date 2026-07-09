@@ -1,0 +1,1400 @@
+{
+  "question_num": 1,
+  "question": "Walt Disney dominated his amusement park peers at Academy Awards?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 1127.4567205905914,
+  "facts": "Walt Disney won a total of 26 Academy Awards. The founder of Six Flags, Angus G Wynne, had 0 academy awards. The founder of Knott's Berry Farm, Walter Knott, had 0 academy awards.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 2,
+  "question": "Have the Israelis played the Hammerstein Ballroom?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1526.4908707141876,
+  "facts": "The Israelis are an ethnic group The Hammerstein Ballroom is a venue for concerts and musical performances",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 3,
+  "question": "Did Solomon make up bigger percentage of Islamic prophets than Kings of Judah?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 29074.370150089264,
+  "facts": "According to The Quran, Solomon was one of 25 prophets. According to some Islamic hadiths, there have been as many as 124,000 prophets. Solomon was one of 20 Kings of Judah.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 4,
+  "question": "Can nitric acid break the Louvre?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 1283.918249130249,
+  "facts": "Parts of the Louvre are built of limestone. Nitric acid dissolves limestone.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 5,
+  "question": "Do drummers need spare strings?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 593.4738779067993,
+  "facts": "Drummers usually work with guitarists or other stringed instrumentalists. However, drum sets do not contain strings. Musicians usually change their own strings as necessary, so it is their band mates, not the drummer, who carries the spare strings.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 6,
+  "question": "Do Sweet Potatoes prevent other plants from growing in their place?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 296.6032953262329,
+  "facts": "When sweet potato plants decompose, they release a chemical that prevents germination in their soil. Farmers will work to ensure that all parts of a sweet potato plant are out of the field before trying to grow in it again.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 7,
+  "question": "Would a pear sink in water?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 347.44302701950073,
+  "facts": "The density of a raw pear is about 0.59 g/cm^3. The density of water is about 1 g/cm^3. Objects only sink if they are denser than the surrounding fluid.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 8,
+  "question": "Is the United States Capitol located near the White House?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 273.6771025657654,
+  "facts": "The Capitol building is located at one end of the National Mall in downtown Washington DC. The White House is located next to the Washington Monument a short way down from the Mall.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 9,
+  "question": "Would a 900,000 pound net worth person be an American billionaire if they exchange currency June 2020?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 8498.1897418499,
+  "facts": "The exchange rate in June of 2020 between dollars and pounds is 1 Euro= 1.23 dollar. 900000 pounds is equal to about 1,107,000.00",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 10,
+  "question": "Did Columbus obtain his funding from the rulers of the Portugese Empire?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 430.00836873054504,
+  "facts": " King Ferdinand and Queen Isabella funded Columbus' voyage to the New World. King Ferdinand of Argon and Queen Isabella of Castille were the joint rulers of kingdoms of the Iberian Peninsula, which included modern-day Spain but excludes Portugal.  King John II of Portugal rejected Columbus' request for funding. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 11,
+  "question": "Does Masaharu Morimoto rely on glutamic acid?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 2433.529144525528,
+  "facts": "Masaharu Morimoto is a Japanese chef Japanese cuisine relies on several forms of seaweed as ingredients and flavorings for broth like kombu dashi Glutamic acid has been identified as the flavoring component in kombu seaweed",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 12,
+  "question": "Can petroleum jelly be used as fuel in a car?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 3516.061516523361,
+  "facts": "Petroleum is a highly reactive liquid used to power cars. Petroleum jelly is a solid substance used as an ointment on cuts and scrapes to promote healing. Petroleum jelly does not oxidize on exposure to the air and is not readily acted on by chemical reagents.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 13,
+  "question": "Is 2018 Ashland, Oregon population inadequate to be a hypothetical military division?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 3581.397484064102,
+  "facts": "The 2018 population of Ashland Oregon was 21,263 people. The number of soldiers in a military division is between 10,000 and 25,000 people.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 14,
+  "question": "Did any country in Portuguese Colonial War share Switzerlands role in WWII?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 4753.44583940506,
+  "facts": "The Portuguese Colonial War was between Portugal and several groups including People's Movement for Liberation of Angola. Switzerland remained neutral in World War II and did not get involved. Portugal stayed out of world affairs during World War II.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 15,
+  "question": "Lil Wayne similar real name rapper has over quadruple Wayne's Grammy awards?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 2470.4620172977448,
+  "facts": "Lil Wayne was born Dwayne Michael Carter. Jay-Z was born Shawn Corey Carter. Lil Wayne has won 5 Grammy awards. Jay-Z has won 22 Grammy awards.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 16,
+  "question": "Was the Joker an enemy of the Avengers?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 18.002953052520752,
+  "facts": "The Joker is a DC Comics villain. The Avengers are a group of heroes from Marvel Comics. Being from different publishers, they do not meet.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 17,
+  "question": "Would the historic Hattori Hanz\u014d admire Naruto?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1792.5924372673035,
+  "facts": "Naruto is a ninja Ninja tactics were considered dishonorable by samurai Hattori Hanz\u014d is a famous historical samurai ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 18,
+  "question": "Is it impossible for pigs to use pig latin?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 252.14652943611145,
+  "facts": "Pig latin is a language game played by rearranging parts of words to disguise them Pigs are ungulates and incapable of speech using human languages",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 19,
+  "question": "Does welding with acetylene simulate the temperature of a star?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 10510.752781152725,
+  "facts": "Acetylene is used for oxyacetylene welding  An acetylene/oxygen flame burns at about 3,773 K  The star Betelgeuse has a surface temperature of 3,500 K",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 20,
+  "question": "Would a duke hypothetically be subservient to a Tsar?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 287.23495960235596,
+  "facts": "The Tsar was the highest ruler in several eastern countries. A duke was a title given to important european nobles. Dukes ranked below princes, kings, and queens. Tsars were the equivalents of English Kings.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 21,
+  "question": "Is a jellyfish safe from atherosclerosis?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 882.9728677272797,
+  "facts": "Atherosclerosis is a condition in which the arteries to the heart are blocked. Jellyfish use their guts to circulate nutrients because they do not have hearts.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 22,
+  "question": "Can telescopes hear noise?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 288.2300570011139,
+  "facts": "Telescopes are used to view things far away. Telescopes are an optical instrument. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 23,
+  "question": "Do moths that live on sloths have family dinners?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1606.3459405899048,
+  "facts": "Algae grows on sloths Sloth moths feed on algae that grows on sloths Sloth moth caterpillars feed on sloth dung  Sloths defecate far from their ususl abode",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 24,
+  "question": "Can the majority of vowels be typed on the first line of a QWERTY keyboard?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 3574.7681453227997,
+  "facts": "In English the vowels consist of A, E, I, O, U, and sometimes Y. The first line of the QWERTY keyboard contains the vowels E, I, O, U, and Y. A majority means more than half of the total.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 25,
+  "question": "Does Linus Torvalds make money off of DirectX?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 13.845364093780518,
+  "facts": "DirectX is a proprietary technology owned by Microsoft Linus Torvalds is the creator and lead developer for the open-source Linux kernel The Linux kernel is used in operating systems that are competitors of Microsoft Windows",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 26,
+  "question": "Can E6000 cure before a hoverboard finishes the Daytona 500? ",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 5165.439794301987,
+  "facts": "The Daytona 500 is 500 miles A hoverboard can move at six to eight miles per hour E6000 fully cures in 24 to 72 hours",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 27,
+  "question": "Can you find Bugs Bunny at Space Mountain?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 31.388418912887573,
+  "facts": "Space Mountain is an attraction at Disney theme parks Bugs Bunny is a Warner Bros. character Warner Bros. characters appear at Six Flags theme parks",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 28,
+  "question": "Was Eve involved in an incestuous relationship?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 212.85272884368896,
+  "facts": "God made Eve from a bone he removed from Adam. Since Eve was made from Adam, they would have had similar DNA and been considered twins or at least siblings. As the only humans at the time, they ended up starting a family together.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 29,
+  "question": "Is a thousand dollars per Days of Our Lives episodes preferred to other soaps?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 867.4622061252594,
+  "facts": "Days of Our Lives has aired around 13,900 episodes as of 2020. General Hospital aired their 14,000th episode on February 23, 2018.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 30,
+  "question": "Would it be common to find a penguin in Miami?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 236.192156791687,
+  "facts": "Penguins are native to the deep, very cold parts of the southern hemisphere. Miami is located in the northern hemisphere and has a very warm climate.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 31,
+  "question": "Would Bugs Bunny harm an olive tree in the real world?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 31.59645700454712,
+  "facts": "Bugs Bunny is an anthropomorphic gray and white rabbit. Rabbits eat the bark of olive trees and can do considerable damage, especially to young trees.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 32,
+  "question": "Is Menthol associated with Thanksgiving?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 945.3569107055664,
+  "facts": "Menthol is the main component of peppermint oil and is responsible for the noticeable cooling sensation.  During Thanksgiving, turkey, potatoes, gravy, and pie are common dishes. None of which have menthol in it.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 33,
+  "question": "Does  Lionel Richie believe in holistic medicine?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 13.851075649261475,
+  "facts": "Lionel Richie suffered prolonged throat problems and had surgery four times in four years before being told by conventional doctors that he could lose his singing career.  Lionel Richie finally turned to a holistic doctor who said that the problem was simply acid reflux caused by foods he was eating before going to bed.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 34,
+  "question": "Would Columbus have discovered Durian trees during his 1492 expedition?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 309.82025623321533,
+  "facts": "Columbus ended up in the Americas Durian only exists in Southeast Asia",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 35,
+  "question": "Could Rich and Morty be triggered for children of alcoholics?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 367.7183940410614,
+  "facts": "Rick, one of the titular characters of Rick and Morty, is often seen drunk and speaking abusively to Morty. Morty's mother Beth is depicted multiple times neglecting her children while getting drunk on wine.  Trauma triggers can occur when someone is exposed to something that reminds them of a traumatic situation. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 36,
+  "question": "Did mongoose come from later period than rhinos?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 1473.614397764206,
+  "facts": "The mongoose originated  in the Neogene geological period. Rhinos are from the Paleogene geological period. The Paleogene period spans 43 million years from the end of the Cretaceous Period 66 million years ago to the beginning of the Neogene Period.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 37,
+  "question": "Is Sirius part of a constellation of an animal?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 530.3083333969116,
+  "facts": "Sirius is the brightest star in the constellation Canis Major. Canis Major represents a large dog.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 38,
+  "question": "Is there a popular Disney character made from living ice?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 14.5667405128479,
+  "facts": "Olaf is a popular character in Disney's Frozen series. Olaf is a snowman, accidentally enchanted to life by Elsa while she magically builds her ice tower.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 39,
+  "question": "Would Goofy hypothetically enjoy Nylabone?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 354.71205043792725,
+  "facts": "Goofy is a popular Disney cartoon character that is a dog. Nylabone is a popular dog bone brand. Dogs chew bones for the taste, and to exercise the muscles of the jaw.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 40,
+  "question": "Will Communion be denied to Wednesday name origin followers?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 496.47118878364563,
+  "facts": "Communion is the body and blood of Christ given out during mass. Communion is only given to believers baptized in the Christian Church. Wednesday comes from Old English Wodnesdaeg referring to Woden, also called Odin. Odin was the pagan god of Norse mythology. Vikings, believers in Norse mythology, clashed with Christians in Wessex and Northumbria for hundreds of years.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 41,
+  "question": "Does the Pixar film Brave feature Scottish people?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 13.740086317062378,
+  "facts": "The movie Brave is set in the Scottish highlands. Merida, the main character of Brave, is a Princess of Medieval Scotland ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 42,
+  "question": "Will the torso be safe from blows to the largest and smallest bones in body?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 1013.7595965862274,
+  "facts": "The three smallest bone in the body are malleus, incus, and stapes. Malleus, incus, and stapes are located in the ear. The femur is the largest bone in the body. The femur is located in the leg. The torso is located in the center of the body.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 43,
+  "question": "Can a snake swallow an M60 Patton?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 269.08007192611694,
+  "facts": "An M60 Patton is an army tank that weighs several tons. One of the largest animals a snake ate was an impala that weighed 130 pounds.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 44,
+  "question": "Should a finished website have lorem ipsum paragraphs?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 254.6365578174591,
+  "facts": "Lorem Ipsum paragraphs are meant to be temporary. Web designers always remove lorem ipsum paragraphs before launch.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 45,
+  "question": "Is it best to avoid kola nuts with colitis?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 416.57596135139465,
+  "facts": "Colitis is a disease in which the colon becomes inflamed. Many things can trigger colitis, including dairy, alcohol, and caffeine. The kola nut is the fruit of the tropical cola tree that contains caffeine inside.",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 46,
+  "question": "Are swastikas used in the most common religion in India?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 268.90314626693726,
+  "facts": "The swastika is a religious symbol that is used in Hinduism, Buddhism, and Jainism. Almost 80% of people in India practice Hinduism.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 47,
+  "question": "Can a Bengal cat survive eating only pancakes?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 258.0795269012451,
+  "facts": "Bengal cats are carnivores. Pancakes contain no meat. Carnivores eat only meat to survive. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 48,
+  "question": "Would Robert Wadlow tower over a German Shepherd?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 50.50999069213867,
+  "facts": "German Shepherds have a height between 22 and 26 inches. Robert Wadlow was the tallest man ever, reaching a height of 8 ft 11.1 inches at his death.",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 49,
+  "question": "Was Iggy Pop named after his father?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 1280.2974264621735,
+  "facts": "Iggy Pop's birth name was James Newell Osterberg Jr. The father of Iggy Pop was James Newell Osterberg Sr.",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 50,
+  "question": "Would Temujin hypothetically be jealous of Charlemagne's conquests?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1545.3086693286896,
+  "facts": "Temujin was the birth name of Genghis Khan. Genghis Khan founded the Mongol Empire which was the largest land empire in world history. Charlemagne, King of the Franks, conquered most of Western Europe. At its peak, the Mongol Empire had 110 million people. Charlemagne's empire had around 20 million people at its height.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 51,
+  "question": "Can the history of art be learned by an amoeba?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 229.41821932792664,
+  "facts": "The history of art is the academic study of the development of human artistic expression over time Academic study requires human-level intelligence An amoeba is a single-celled organism ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 52,
+  "question": "Can you chew argon?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 554.0767197608948,
+  "facts": "Chewing is the act of breaking down solid objects with your teeth Under normal conditions, argon exists as a gas",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 53,
+  "question": "Does the Red Sea have biblical significance? ",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 18.39581871032715,
+  "facts": "During the biblical Exodus, the Israelite had to cross the Red Sea. Moses parted the Red Sea to allow the Israelite group to escape from the Egyptians. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 54,
+  "question": "Is Nicole Kidman ideal choice to play Psylocke based on height and weight?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 20.216796398162842,
+  "facts": "Psylocke is a Marvel super hero whose real name is Betsy Braddock. Betsy Braddock is 5'11 and 155 lbs. Actress Nicole Kidman is 5'11 and weighs 137 lbs. Actresses gain weight all the time for roles, such as Charlize Theron who gained 30 pounds for the movie Monster.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 55,
+  "question": "Is Jack Black unlikely to compete with Bear McCreary for an award?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 271.6322877407074,
+  "facts": "Jack Black is a musician but not a composer Bear McCreary is a composer Their interests are similar but their skills not overlap in awards categories",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 56,
+  "question": "Would a Yeti be likely to have prehensile limbs?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 1477.4784333705902,
+  "facts": "The animals that Yetis are said to look similar to are able to use their hands or toes to grasp items The ability to grasp with hands or other limbs is to be prehensile. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 57,
+  "question": "Can The Hobbit be read in its entirety in four minutes?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 30.25606417655945,
+  "facts": "The Hobbit is a 95,356 word book by J.R.R. Tolkien. Speed reader Howard Stephen Berg could read at the speed of 25,000 words per minute. Speed reader Maria Teresa Calderon from the Philippines claimed to be able to read 80,000 words per minute with 100% comprehension.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 58,
+  "question": "Would a member of the United States Air Force get a discount at Dunkin Donuts?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 21.162572622299194,
+  "facts": "The United States Air Force is part of the military. Dunkin Donuts offers a military discount. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 59,
+  "question": "Could Edward Snowden have visited the headquarters of United Nations Conference on Trade and Development?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 20.403943300247192,
+  "facts": "The headquarters of the United Nations Conference on Trade and Development is in Geneva, Switzerland. Edward Snowden was stationed in Geneva in 2007 with the task of representing the US at the UN.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 60,
+  "question": "Would an actuary be confused about what prime numbers are?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 12.860278844833374,
+  "facts": "Actuaries must go through college and rigorous studies in mathematics to obtain their jobs. Prime numbers are introduced in basic high school mathematics. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 61,
+  "question": "Would Kylee Jenner ask for no cream in her coffee?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 18.940910577774048,
+  "facts": "Kylee Jenner is lactose intolerant. Lactose intolerance makes it uncomfortable for people to digest foods containing lactose. Cream is a dairy product and is rich in lactose.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 62,
+  "question": "Could a white belt defeat Jon Jones in a Brazilian jiu-jitsu match?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 907.1682586669922,
+  "facts": "A white belt is the lowest ranking in Brazilian jiu-jitsu. Jon Jones has a purple belt in Brazilian jiu-jitsu under Roberto Alencar. A purple belt is the second highest ranking in Brazilian jiu-jitsu. Jon Jones is one of the greatest combat sports athletes to ever live.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 63,
+  "question": "In geometry terms, is the Royal Observatory in Greenwich similar to a yield sign?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 20.971118211746216,
+  "facts": "The main building of the Royal Observatory is the Octagon Room. A yield sign is shaped like a rounded triangle. Two figures are similar if they have the same shape but not necessarily the same size.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 64,
+  "question": "Would a birdwatcher pursue their hobby at a Philadelphia Eagles game?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 14.241221904754639,
+  "facts": "Birdwatching is a recreational activity in which people observe and/or listen to the sounds of birds. Despite their name, the Philadelphia Eagles are a professional American Football team comprised of humans, not birds.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 65,
+  "question": "Is it okay to lie after taking an oath in a court of law?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 27.27355670928955,
+  "facts": "In a court of law, lying under oath is considered perjury.  Perjury is considered a crime.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 66,
+  "question": "Was animal in You're a Good Sport, Charlie Brown, hypothetically a hound?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 16.45177149772644,
+  "facts": "A hound is a type of hunting dog used to track prey. Hounds include Basenjis, Dachsunds, and Beagles, among others. Snoopy is the dog in the Charlie Brown movies and books. Snoopy is a Beagle.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 67,
+  "question": "Are all limbs required for jujutsu?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 14.19645357131958,
+  "facts": "Jujutsu is a Japanese martial art that uses unarmed combat to subdue opponents. Nick Newell, a congenital amputee, got his black belt after two straight submission wins. Fighter Aaron LaPointe has succeeded in martial arts with a fully paralyzed arm.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 68,
+  "question": "Are monks forbidden from engaging in warfare?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 16.04054093360901,
+  "facts": "Monks are members of religious orders that usually take vows of poverty, chastity, and obedience. The Knights Templar were a religious order that fought during the Crusades and captured Jerusalem in 1099. Buddhist Shaolin monks developed very powerful martial arts skills, have defended temples during conquests.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 69,
+  "question": "Does Ahura Mazda have a rivalry with Zeus?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.932878494262695,
+  "facts": "Ahura Mazda is a deity of Zoroastrianism, a contemporary religion Zeus is a deity of Greek mythology",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 70,
+  "question": "Is Cookie Monster's diet Paleo friendly?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 16.009201049804688,
+  "facts": "Cookie Monster is a Sesame Street character that eats copious amounts of chocolate chip cookies. The Paleo diet includes foods made from ingredients found during the Paleolithic area. Chocolate chip cookies contain soy lecithin and artificial grains. Lecithin is used in complex modern industrial processes.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 71,
+  "question": "Are goldfish more difficult to care for than isopods?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 16.36445689201355,
+  "facts": "Isopod care is compared to that of a houseplant. Goldfish are notorious for making their tanks dirty quite often.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 72,
+  "question": "Will you see peach blossoms and Andromeda at the same time?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 24.729774236679077,
+  "facts": "Peach trees bloom in the spring. Andromeda is visible in the fall.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 73,
+  "question": "Can too many oranges cause diarrhea?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 17.493399620056152,
+  "facts": "Oranges are very high in fiber and sugar. Too much fiber can cause diarrhea.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 74,
+  "question": "Can Viper Room concert hypothetically be held at National Diet building?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.826178312301636,
+  "facts": "The Viper Room has a capacity of 250 people. The National Diet building has two wings with over 700 seats.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 75,
+  "question": "Was Alexander the Great baptized?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 22.266090869903564,
+  "facts": "Baptism is a symbolic Christian rite using water. Christianity started in the first century AD. Alexander the Great lived from 356 BC- 323 BC.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 76,
+  "question": "Did Stone Cold Steve Austin wrestle in three different centuries?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.247662782669067,
+  "facts": "A century is a period of 100 years. Stone Cold Steve Austin made his wrestling debut on September 30, 1989. Stone Cold Steve Austin retired on March 30, 2003. The 20th (twentieth) century was a century that began on January 1, 1901 and ended on December 31, 2000. The 21st century began on January 1, 2001, and will end on December 31, 2100.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 77,
+  "question": "Would General Zod prefer an iPhone over a Samsung Galaxy S4?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 20.841134786605835,
+  "facts": "General Zod is a villain. Apple does not allow moviemakers to give villains iPhones.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 78,
+  "question": "Do depressed people travel to the Golden Gate Bridge often?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 16.12182307243347,
+  "facts": "The Golden Gate Bridge is one of the most popular suicide spots in the USA. Suicide is often caused by severe depression.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 79,
+  "question": "Do most middle class families have butlers?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 16.22621750831604,
+  "facts": "Butlers make about $60,000 per year on average for their work. Middle class income is between $48,000 and $145,000.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 80,
+  "question": "Did eggs need to be kept cold in the middle ages?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 14.103513479232788,
+  "facts": "When eggs are freshly laid, they are covered in a film called a 'bloom.'  Eggs with their bloom intact are able to stay at room temperature for one month. Pasteurization destroys the bloom on eggs.  Pasteurization was introduced in the 1990's.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 81,
+  "question": "Can you buy a fair trade laptop?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 19.527196168899536,
+  "facts": "Fair trade is a term used with sustainable development focusing on agricultural production Laptops are consumer electronics",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 82,
+  "question": "Does March begin on the same day of the week as February during leap years?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 18.053190231323242,
+  "facts": "During normal years, February has exactly 28 days, so March begins on the same day of the week as February. However, on leap years, February has an extra day, so March begins the next day of the week from whichever day started February.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 83,
+  "question": "Could a Gladiator's weapon crush a diamond?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 17.960963249206543,
+  "facts": "Gladiators used a sword known as a Gladius. The Gladius was a short sword made from various elements of steel. Diamond is one the hardest known substances on earth. Only diamond can be used to cut another diamond.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 84,
+  "question": "Are Brussels sprout particularly good for adrenal fatigue?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 21.944469213485718,
+  "facts": "Adenal fatigue is a disorder in which the body does not produce enough hormones and people get tired. Brussels sprout are foods rich in vitamin C. When stress levels rise, the adrenal glands require more Vitamin C and it is used very quickly.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 85,
+  "question": "Would John the Baptist be invited to a hypothetical cephalophore reunion in heaven?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 2286.0376234054565,
+  "facts": "John the Baptist was a preacher that became a Catholic Saint. John the Baptist was beheaded by king Herod. A cephalophore is a Saint martyred by beheading, and is depicted in art as carrying their own head. Saint Denis was one of several beheaded saints that is said to have carried his own head and is depicted as such in art. John the Baptist did not carry his head, since it was on a plate owned by King Herod's stepdaughter.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 86,
+  "question": "Could Eddie Murphy dial 911 in a car as a young child?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 47.349860429763794,
+  "facts": "Eddie Murphy was born in 1961. Car phones did not become commonplace in cars in America until 1984.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 87,
+  "question": "Could boolean algebra be described as binary?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 44.49539017677307,
+  "facts": "Binary options tend to have 2 instead of 10 as a base.  Binary directly describes something composed of 2 things. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 88,
+  "question": "Is the US Secretary of State similar to an administrative secretary of an office?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.666276693344116,
+  "facts": "An administrative secretary of an office is hired to handle routine and calendar scheduling for a superior. The US Secretary of State is the head of the Department of State. The US Secretary of State is analogous to a foreign minister of other countries.  The US secretary of state can have administrative assistants.  Another name for administrative secretary is administrative assistant. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 89,
+  "question": "Is 500GB USB device enough to save 10 hours of Netflix shows a day?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 19.461862802505493,
+  "facts": "5 hours of Netflix programming uses up approximately 1 TB of data. 1 TB is equal to 1000 GB of data.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 90,
+  "question": "Did John Lennon listen to Compact discs?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.389463186264038,
+  "facts": "The Compact disc was released in 1982 by Philips and Sony. John Lennon was killed on December 8, 1980.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 91,
+  "question": "Are all types of pottery safe to cook in?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 28.3299663066864,
+  "facts": "Some types of pottery glaze are unsafe for contact with food meant for human consumption.  Antique pottery pieces may have hazardous levels of lead in them.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 92,
+  "question": "Would someone with leukophobia enjoy looking at the Flag of the United States?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 20.642760753631592,
+  "facts": "Leukophobia is a fear of the color white. The United States flag is colored red, white, and blue. People do not typically enjoy facing their fears.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 93,
+  "question": "Can COVID-19 spread to maritime pilots?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 18.58582305908203,
+  "facts": "Maritime pilots are human beings. COVID-19 can spread among human population. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 94,
+  "question": "Is Pan a symbol of virtue and virginity in women?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.301642894744873,
+  "facts": "Pan is famous for his sexual powers. Women who had had sexual relations with several men were referred to as \"Pan girls.\"",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 95,
+  "question": "Can a New Yorker get their eyes checked by Rand Paul legally?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 12.461283683776855,
+  "facts": "Rand Paul is a senator from Kentucky. Rand Paul was an ophthalmologist in Kentucky with ABO certification. The National Board of Ophthalmology does not recognize ABO certification. Kentucky does not require ophthalmologists to be certified. NY ophthalmologists must have approved application for licensure certifications.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 96,
+  "question": "Has the Subway restaurant franchise had any connections with child abusers?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 23.800847053527832,
+  "facts": "Subway hired Jared Fogle as a spokesman for their sandwich shops. Jared Fogle was convicted for having sex with minors and for possessing child pornography. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 97,
+  "question": "Can a Sphynx cat be used for wool?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 25.8923077583313,
+  "facts": "A Sphynx cat is a breed of cats that lacks hair. Wool is a soft smooth fabric derived from the hair of animals. Sphynx cats skin are covered in an oily sticky substance.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 98,
+  "question": "Would you find olives at a heladeria?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 15.15122389793396,
+  "facts": "Olives are fruits of the olive tree used in savory dishes and preparations like olive oil and tapenade A heladeria is an ice cream parlour",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 99,
+  "question": "Is unanimously elected president's birthday a break for mail carriers?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 31.58770179748535,
+  "facts": "The post office has several holidays including: New Year's Day, Washington's Birthday (President's Day), and Veterans Day. George Washington was the only US president elected unanimously.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 100,
+  "question": "Were any of despised Pope Alexander VI's descendants canonized?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 19.490896701812744,
+  "facts": "Pope Alexander the VI was a controversial pope born as Rodrigo Borgia. Rodrigo Borgia had several children including the despised Juan Borgia who was murdered in 1497. Juan Borgia's grandson, Francis Borgia, was a Jesuit priest and the third Superior General of the Society of Jesus. Canonization is the process by which the Catholic Church names someone a saint. Francis Borgia was named a Catholic saint in June 1670.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}

@@ -1,0 +1,40 @@
+{
+  "question_num": 1,
+  "question": "Would Ringo Starr avoid the pot roast at a restaurant?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 278.7255461215973,
+  "facts": "Ringo Starr is a vegetarian. Vegetarianism is the practice of abstaining from the consumption of meat. Pot roast is a braised beef dish made by browning a roast-sized piece of beef before slow cooking the meat in a covered dish, sometimes with vegetables, in or over liquid.",
+  "retry_count": 0
+}
+{
+  "question_num": 2,
+  "question": "Does Iphone have more iterations than Samsung Galaxy?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 443.1325776576996,
+  "facts": "As of 2020 the latest Iphone is Iphone 11. As of 2020 the latest Samsung Galaxy phone is the Samsung Galaxy S20.",
+  "retry_count": 0
+}
+{
+  "question_num": 3,
+  "question": "Does Jason have anything in common with Dr. Disrespect?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 634.74458360672,
+  "facts": "Jason cheated on Medea with Creusa Dr. Disrespect cheated on his wife with another woman",
+  "retry_count": 0
+}
+{
+  "question_num": 4,
+  "question": "Would you hire someone with dyscalculia to do surveying work?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 346.2268023490906,
+  "facts": "Dyscalculia is a learning disability in math. People with dyscalculia have trouble with math at many levels.  Surveyors work with elements of geometry, trigonometry, regression analysis, physics, engineering, metrology, programming languages, and the law.  Geometry and trigonometry are types of advanced mathematics.",
+  "retry_count": 0
+}

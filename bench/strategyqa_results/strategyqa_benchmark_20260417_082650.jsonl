@@ -1,0 +1,168 @@
+{
+  "question_num": 1,
+  "question": "Would Ringo Starr avoid the pot roast at a restaurant?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.762818813323975,
+  "facts": "Ringo Starr is a vegetarian. Vegetarianism is the practice of abstaining from the consumption of meat. Pot roast is a braised beef dish made by browning a roast-sized piece of beef before slow cooking the meat in a covered dish, sometimes with vegetables, in or over liquid.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 2,
+  "question": "Does Iphone have more iterations than Samsung Galaxy?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.3493127822876,
+  "facts": "As of 2020 the latest Iphone is Iphone 11. As of 2020 the latest Samsung Galaxy phone is the Samsung Galaxy S20.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 3,
+  "question": "Does Jason have anything in common with Dr. Disrespect?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.594019651412964,
+  "facts": "Jason cheated on Medea with Creusa Dr. Disrespect cheated on his wife with another woman",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 4,
+  "question": "Would you hire someone with dyscalculia to do surveying work?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.46938610076904,
+  "facts": "Dyscalculia is a learning disability in math. People with dyscalculia have trouble with math at many levels.  Surveyors work with elements of geometry, trigonometry, regression analysis, physics, engineering, metrology, programming languages, and the law.  Geometry and trigonometry are types of advanced mathematics.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 5,
+  "question": "Is it more expensive to run for President of India than to buy a new iPhone 11?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.131694316864014,
+  "facts": "Candidates for the presidency of India must pay a deposit of Rs 15,000 A brand new iPhone 11 costs Rs 67,300",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 6,
+  "question": "Can Arnold Schwarzenegger deadlift an adult Black rhinoceros?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.4013614654541,
+  "facts": "Arnold Schwarzenegger deadlifted 710 pounds in a competition. The world deadlift record is 1,104 pounds, set by Game of Thrones actor Hafthor Bjornsson. The weight of an adult Black rhinoceros is between 1,800 \u2013 3,100 pounds.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 7,
+  "question": "Did any citizen of San Antonio vote for Boris Johnson?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.52263808250427,
+  "facts": "San Antonio is a city in Texas in the United States of America Boris Johnson is the Prime Minister of the UK Only UK and commonwealth citizens may vote in UK elections",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 8,
+  "question": "Was Jackson Pollock trained by Leonardo da Vinci?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.1846764087677,
+  "facts": "Leonardo lived during the Italian Renaissance in the 17th century. Jackson Pollock lived during the 20th century.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 9,
+  "question": "Was Kurt Cobain's death indirectly caused by Daniel LeFever?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.62228488922119,
+  "facts": "Kurt Cobain committed suicide with a shotgun. Daniel LeFever was the inventor of the American hammerless shotgun.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 10,
+  "question": "Could the moon fit inside the Black Sea?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 39.85207462310791,
+  "facts": "The volume of the Black Sea is 547,000 cubic kilometers. The volume of the moon is 21.9 billion cubic kilometers.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 11,
+  "question": "Did Jon Brower Minnoch suffer from anorexia nervosa?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.15970182418823,
+  "facts": "Jon Brower Minnoch was an American man who, at his peak weight, was the heaviest human being ever recorded, weighing 1,400 lb. Anorexia nervosa,Anorexia nervosa is an eating disorder, characterized by low weight, food restriction, fear of gaining weight, and a strong desire to be thin. Many people with anorexia see themselves as overweight even though they are, in fact, underweight.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 12,
+  "question": "Do all of the African regions that participated in the Portugese Colonial War share an official language?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 40.14495086669922,
+  "facts": " The current African nations of Angola, Guinea-Bissau and Mozambique participated in the the Portugese Colonial War. The Portugese Colonial War was a decisive struggle in Lusophone Africa. Lusaphone countries are those that include Portugese as an official language.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}

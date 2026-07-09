@@ -1,0 +1,434 @@
+{
+  "question_num": 1,
+  "question": "Was ship that recovered Apollo 13 named after a World War II battle?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 293.56996750831604,
+  "facts": "Apollo 13 was recovered by the USS Iwo Jima. Iwo Jima was captured from the Imperial Japanese Army during World War II by the US in a conflict called the Battle of Iwo Jima.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 2,
+  "question": "Is the tibia necessary to win the Stanley Cup?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 79.59773802757263,
+  "facts": "The Stanley Cup is the championship trophy of the National Hockey League Ice hockey is a game played by individuals wearing ice skates to move around a frozen playing field The tibia is a leg bone Legs are required in order to use ice skates",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 3,
+  "question": "Could the Powepuff Girls make the background to the Azerbaijani flag?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 29.675083875656128,
+  "facts": "The national flag of the Republic of Azerbaijan is a horizontal tricolour featuring three equally sized fesses of blue, red, and green Each of the Powerpuff Girls creates a trail of a different color when she flies: Bubbles makes blue, Blossom makes red, and Buttercup makes green.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 4,
+  "question": "Are eagles and young bears both used as labels for skills-training youth groups?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 21.579909563064575,
+  "facts": "A young bear is a cub. Boy Scouts is a skill-training youth group that includes divisions such as Cub Scouts and Eagle Scouts",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 5,
+  "question": "Would an Olympic athlete be tired out after running a mile?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 11.12531590461731,
+  "facts": "The Olympic standard for men in running one mile is 4 minutes, 19 seconds.  The Olympic standard for women in running one mile is at least 4 minutes and 40 seconds. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 6,
+  "question": "Would a goblin shark eat at Crossroads Kitchen?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 62.25922155380249,
+  "facts": "Goblin sharks are carnivores that subsist on other fish, cephalopods and crustaceans Crossroads Kitchen is a vegan restaurant in Los Angeles Vegans do not consume any animal products",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 7,
+  "question": "Was  Godfrey of Bouillon an Islamaphobe?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 11.436163187026978,
+  "facts": " Godfrey of Bouillon lead troops during the Prince's Crusade. The Prince's Crusade was an attempt by Europeans to \"take back\" the city of Jerusalem from Islamic hands.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 8,
+  "question": "Did Helen Keller ever read a novel by J. K. Rowling?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 19.441065788269043,
+  "facts": "Helen Keller died in 1968. J. K. Rowling's first novel was published in 1997.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 9,
+  "question": "Is Guitar Hero Beatles inappropriate for a US third grader?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 58.232890605926514,
+  "facts": "The average age of a US third grader is 8. Guitar Hero is recommended for ages 7 and up. The Beatles were a British rock band with a plethora of radio friendly hits.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 10,
+  "question": "Is CAS number 8009-03-8 harmful for a rash?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 38.28916001319885,
+  "facts": "Some common substances that help rashes are creams, oils, and petroleum based products. CAS number 8009-03-8 is the identifier number for petroleum jelly.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 11,
+  "question": "Is the Asian black bear multicolored?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 26.867960453033447,
+  "facts": "The Asian black bear is an animal that lives in habitats with trees. Multicolored refers to anything that is composed of more than one color. The Sian black bear has a black coat with a white V-shaped patch.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 12,
+  "question": "Could Tom Cruise explain mental auditing?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 50.027684688568115,
+  "facts": "Mental auditing is a practice within the church of Scientology. Tom Cruise is a long standing member of the church of Scientology and is high in the ranks.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 13,
+  "question": "Is it unusual to play Happy hardcore music at a funeral?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 34.021636962890625,
+  "facts": "Happy hardcore is a music genre of hard dance. Happy hardcore emerged both from the UK breakbeat hardcore rave scene, and Belgian, German and Dutch hardcore techno scenes. A funeral is traditionally a somber event. Funerals typically do not involve dancing. Raves are typically energetic and upbeat places and are not somber like a funeral.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 14,
+  "question": "Could every citizen of Samoa send a letter to a unique JPMorgan Chase employee?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 22.86221718788147,
+  "facts": "JPMorgan Chase had a total of 256,981 employees in the fourth quarter of 2019. The estimated population of Samoa as of July 1st, 2019 is 200,874.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 15,
+  "question": "Would Michael J Fox qualify for the Army Rangers?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 25.938460111618042,
+  "facts": "Michael J Fox has Parkinson's disease.  Parkinson's disease is a brain disorder that leads to shaking, stiffness, and difficulty with walking, balance, and coordination. To qualify for the Army Rangers,  you must complete a 12-mile march with a 35-pound rucksack and weapon in less than three hours.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 16,
+  "question": "Will a Holstein cow and the Liberty Bell balance out a giant scale?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 36.0115065574646,
+  "facts": "The Liberty Bell weighs 2,080 pounds. A mature Holstein cow weighs around 1,500 pounds.",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 17,
+  "question": "Do hyenas appear in a Broadway musical?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 16.164374589920044,
+  "facts": "Scar is the evil lion in Disney's Lion King. Scar's minions are a group of hyenas. There is a Broadway stage version of Lion King.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 18,
+  "question": "Are most mall Santa Claus actors white?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 62.32520914077759,
+  "facts": "In 2016, a black man playing Santa Claus at the Mall of America made national headlines. There are map websites dedicated to locating black Santa Claus mall actors.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 19,
+  "question": "Does Princess Peach's dress resemble a peach fruit?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 20.349359273910522,
+  "facts": "Peaches have fuzzy red, orange, and yellow skin. Princess Peach is a character in the Nintendo Mario Universe. Princess Peach's dress is pink and floor length.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 20,
+  "question": "Do people with mood disorders need permanent institutionalization?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 21.247793912887573,
+  "facts": "Most mood disorders can be treated in the outpatient setting. Many people with mood disorders do not get diagnosed at all.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 21,
+  "question": "Could Stephen King join the NASA Astronaut Corps?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 55.38069677352905,
+  "facts": "NASA Astronaut Corps candidates must have a master's degree from an accredited institution in engineering, biological science, physical science or mathematics. Stephen King studied at the University of Maine, graduating in 1970 with a Bachelor of Arts in English.",
+  "retry_count": 1,
+  "bench_attempts": 2,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 22,
+  "question": "Would Avengers Comics be out of place in a DC Comics store?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 16.517069816589355,
+  "facts": "The Avengers are a comic produced by Marvel. Marvel and DC are rival companies, each having their own line of products and merchandise. ",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 23,
+  "question": "Was the MLB World Series held in Newcastle, New South Wales?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 21.96481466293335,
+  "facts": "The MLB World Series is held annually in a stadium belonging to one of its teams MLB teams are located in the United States and Canada New South Wales is a state in Australia",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 24,
+  "question": "Would someone pay for a coffee in NYC with Euros?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 21.241520166397095,
+  "facts": "New York City is located within the United States. The currency used in the United States is the United States dollar, not the Euro.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 25,
+  "question": "Do some home remedies result in your skin color turning blue?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 17.031234741210938,
+  "facts": "Colloidal silver is a popular alternative treatment/home remedy that is used by some people. Ingestion of colloidal silver in high amounts can tint the skin blue.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 26,
+  "question": "Were Greeks essential to crafting Egyptian Lighthouse of Alexandria?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 16.93635654449463,
+  "facts": "The Lighthouse of Alexandria was an impressive monument in Egypt. The Lighthouse of Alexandria was built by pharaoh Ptolemy II. Ptolemy II was the son of Ptolemy I Soter. Ptolemy I Soter was a Greek bodyguard of Alexander the Great and became pharaoh of Egypt.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 27,
+  "question": "Do all cancer patients get disability?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 17.33518671989441,
+  "facts": "All forms of cancer qualify as diagnoses that can result in disability. Disability is not determined by diagnosis, but by degree of impairment. Some cancer patients do not experience major impairment.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 28,
+  "question": "Did Naruto escape the Temple of Doom?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 17.334240674972534,
+  "facts": "Naruto is a character in a Japanese anime and manga about ninjas The Temple of Doom is a setting from an Indiana Jones movie",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 29,
+  "question": "Is lunch on the beach a good activity to spot the full circle of a rainbow?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 17.32277202606201,
+  "facts": "The full circle of a rainbow cannot usually be seen from ground level Sometimes the full circle of a rainbow can be seen from a high building or aircraft You can see more of a rainbow the closer to the horizon the sun is Lunch occurs at midday when the sun is likely high in the sky",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 30,
+  "question": "Is a fairy more prevalent in world myths than a valkyrie?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 17.331183195114136,
+  "facts": "Valkyries are female figures that choose heroes to bring to Valhalla. Valkyries are exclusive to Norse mythology. A fairy is a mystical magical being that can be found in Celtic, Slavic, German, English, and French folklore.",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}
+{
+  "question_num": 31,
+  "question": "Would a caracal be defeated by Javier Sotomayor in a high jump competition?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 17.626599073410034,
+  "facts": "The caracal can leap higher than 12 feet in the air. Javier Sotomayor is the current men's high jump record holder with a jump of 2.45 m (8 ft 1\u20444 in).",
+  "retry_count": 2,
+  "bench_attempts": 3,
+  "used_worker_tools": false,
+  "require_worker_tools": true,
+  "worker_mandate_violation": true
+}

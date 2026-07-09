@@ -1,0 +1,700 @@
+{
+  "question_num": 1,
+  "question": "Would Ringo Starr avoid the pot roast at a restaurant?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 300.8465394973755,
+  "facts": "Ringo Starr is a vegetarian. Vegetarianism is the practice of abstaining from the consumption of meat. Pot roast is a braised beef dish made by browning a roast-sized piece of beef before slow cooking the meat in a covered dish, sometimes with vegetables, in or over liquid.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 2,
+  "question": "Does Iphone have more iterations than Samsung Galaxy?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 179.82967257499695,
+  "facts": "As of 2020 the latest Iphone is Iphone 11. As of 2020 the latest Samsung Galaxy phone is the Samsung Galaxy S20.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 3,
+  "question": "Does Jason have anything in common with Dr. Disrespect?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 377.19741106033325,
+  "facts": "Jason cheated on Medea with Creusa Dr. Disrespect cheated on his wife with another woman",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 4,
+  "question": "Would you hire someone with dyscalculia to do surveying work?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 356.74064445495605,
+  "facts": "Dyscalculia is a learning disability in math. People with dyscalculia have trouble with math at many levels.  Surveyors work with elements of geometry, trigonometry, regression analysis, physics, engineering, metrology, programming languages, and the law.  Geometry and trigonometry are types of advanced mathematics.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 5,
+  "question": "Is it more expensive to run for President of India than to buy a new iPhone 11?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 157.4345986843109,
+  "facts": "Candidates for the presidency of India must pay a deposit of Rs 15,000 A brand new iPhone 11 costs Rs 67,300",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 6,
+  "question": "Can Arnold Schwarzenegger deadlift an adult Black rhinoceros?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 73.78231906890869,
+  "facts": "Arnold Schwarzenegger deadlifted 710 pounds in a competition. The world deadlift record is 1,104 pounds, set by Game of Thrones actor Hafthor Bjornsson. The weight of an adult Black rhinoceros is between 1,800 \u2013 3,100 pounds.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 7,
+  "question": "Did any citizen of San Antonio vote for Boris Johnson?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 93.10466241836548,
+  "facts": "San Antonio is a city in Texas in the United States of America Boris Johnson is the Prime Minister of the UK Only UK and commonwealth citizens may vote in UK elections",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 8,
+  "question": "Was Jackson Pollock trained by Leonardo da Vinci?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 76.08165049552917,
+  "facts": "Leonardo lived during the Italian Renaissance in the 17th century. Jackson Pollock lived during the 20th century.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 9,
+  "question": "Was Kurt Cobain's death indirectly caused by Daniel LeFever?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 288.1987633705139,
+  "facts": "Kurt Cobain committed suicide with a shotgun. Daniel LeFever was the inventor of the American hammerless shotgun.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 10,
+  "question": "Could the moon fit inside the Black Sea?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 1337.6360754966736,
+  "facts": "The volume of the Black Sea is 547,000 cubic kilometers. The volume of the moon is 21.9 billion cubic kilometers.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 11,
+  "question": "Did Jon Brower Minnoch suffer from anorexia nervosa?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 67.17519617080688,
+  "facts": "Jon Brower Minnoch was an American man who, at his peak weight, was the heaviest human being ever recorded, weighing 1,400 lb. Anorexia nervosa,Anorexia nervosa is an eating disorder, characterized by low weight, food restriction, fear of gaining weight, and a strong desire to be thin. Many people with anorexia see themselves as overweight even though they are, in fact, underweight.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 12,
+  "question": "Do all of the African regions that participated in the Portugese Colonial War share an official language?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 197.49074578285217,
+  "facts": " The current African nations of Angola, Guinea-Bissau and Mozambique participated in the the Portugese Colonial War. The Portugese Colonial War was a decisive struggle in Lusophone Africa. Lusaphone countries are those that include Portugese as an official language.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 13,
+  "question": "Is it possible to get killed walking to the Very Large Telescope?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 92.36748957633972,
+  "facts": "The Very Large Telescope is in the Atacama Desert The Atacama Desert is the driest hot desert in the world.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 14,
+  "question": "Is B's place in alphabet same as Prince Harry's birth order?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 118.5409185886383,
+  "facts": "B is the second letter of the alphabet. Prince Harry was the second son of Charles, Prince of Wales and Diana, Princess of Wales.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 15,
+  "question": "Does it seem like the Gorillaz is composed of more members than they have?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 139.70449995994568,
+  "facts": "In music videos for Gorillaz songs, there are four animated bandmates playing. Gorillaz is a collaboration of 3 band members.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 16,
+  "question": "Was the amount of spinach Popeye ate unhealthy?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 134.3992965221405,
+  "facts": "Popeye was a cartoon character that ate whole cans of spinach to maintain his fighting strength. Spinach is high in oxalates which can lead to kidney stones. Too much spinach can lead to bloating, gas, fever, and diarrhea.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 17,
+  "question": "Are deaf people left out of enjoying music?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 38.8852334022522,
+  "facts": "Deafness exists on a spectrum of total hearing loss to partial hearing loss. Individuals with total hearing loss can still enjoy the bass and beat of music through vibration. Deaf people with cochlear implants can hear music, albeit in a different way than hearing people.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 18,
+  "question": "Was the Carnation Revolution the deadliest revolution in Europe?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 86.1061794757843,
+  "facts": "The Carnation Revolution was initially a 25 April 1974 military coup in Lisbon which overthrew the authoritarian Estado Novo regime. Its name arose from the fact that almost no shots were fired, and Celeste Caeiro offered carnations to the soldiers when the population took to the streets to celebrate the end of the dictatorship; other demonstrators followed suit, and carnations were placed in the muzzles of guns and on the soldiers' uniforms. Portugal is a country located mostly on the Iberian Peninsula, in southwestern Europe.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 19,
+  "question": "Would Recep Tayyip Erdo\u011fan be unfamiliar with b\u00f6rek?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 276.88500595092773,
+  "facts": "Turkey enjoys a wide variety of regional variations of b\u00f6rek among the different cultures and ethnicities composing it. B\u00f6rek is very popular in the cuisines of the former Ottoman Empire, especially in North Africa and throughout the Balkans. Recep Tayyip Erdo\u011fan is the current president of Turkey and he was born and raised there.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 20,
+  "question": "Is there a jukebox musical about a sweet transvestite from Transexual, Transylvania?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 122.09867072105408,
+  "facts": "Jukebox musicals feature songs that have already been released. Rocky Horror Picture Show is about a sweet transvestite from Transexual, Transylvania Rocky Horror Picture Show contains songs written specifically for itself",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 21,
+  "question": "Is \"A Tale of Two Cities\" a popular science novel?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 57.79229950904846,
+  "facts": "\"A Tale of Two Cities\" is a historical fiction novel. Popular science books focus on scientific facts presented to a mainstream audience. Fiction is not fact.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 22,
+  "question": "Could Al Capone have read works from the Harlem Renaissance?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 90.18405652046204,
+  "facts": "The Harlem Renaissance occurred during the 1920s. Al Capone lived through the 1920s.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 23,
+  "question": "Did Dr. Seuss live a tragedy free life?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 76.7909026145935,
+  "facts": "Dr. Seuss's wife committed suicide. In his later years, Dr. Seuss was diagnosed with cancer.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 24,
+  "question": "Could  jockey win Triple Crown between Eid al-Fitr endpoints?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 185.0642683506012,
+  "facts": "The Triple Crown is an accomplishment in which a jockey wins three specific races. The three Triple Crown races are: Preakness, Kentucky Derby, and Belmont Stakes. The three Triple Crown races take place weeks apart. Eid al-Fitr is a Muslim holiday that lasts for three consecutive days.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 25,
+  "question": "Do American teams in National Hockey League outnumber Canadian teams?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 4324.230365753174,
+  "facts": "The National Hockey League is the premiere North American hockey league. The National Hockey League has 7 Canadian teams. The National Hockey League has 24 teams from the United States.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 26,
+  "question": "Did the Nazis use the Hammer and sickle flag?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 69.50672173500061,
+  "facts": "Hammer and sickle is a communist symbol used on flags The Nazi flag had a large symbol of a swastika.  The hammer and sickle was used as a anti Nazi symbol during World War II.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 27,
+  "question": "Is tobacco use made to seem enjoyable in Alice's Adventures in Wonderland?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 512.9380819797516,
+  "facts": "In Alice's Adventures in Wonderland, one of the characters is a caterpillar that smokes hookah. Hookah is a water pipe used to smoke tobacco products. The caterpillar speaks to Alice while making letters out of the smoke he blows.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 28,
+  "question": "Did Tom Bosley enjoy video games on the PlayStation 4?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 88.28860783576965,
+  "facts": "The PlayStation 4 was launched in 2013. Tom Bosley died in 2010.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 29,
+  "question": "Would a sesame seed be mistaken for a wood frog egg?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 70.38597011566162,
+  "facts": "A sesame seed is a flat 3 to 4 mm size seed. Wood frog eggs are globe looking masses about 2 to 5 inches in diameter.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 30,
+  "question": "Could you drive a Rowe 550 to the 2008 Summer Olympics?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 131.72137236595154,
+  "facts": "The Rowe 550 was a car produced by the Chinese SAIC motor company. The Rowe 550 debuted at the 2007 Shanghai Auto Show. The 2008 Beijing Summer Olympics happened in the Capital of the People's Republic of China.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 31,
+  "question": "Does highest US Court have enough seats for every Prime Minister of the United Kingdom since 1952?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 263.4612350463867,
+  "facts": "The highest court in the US is the Supreme Court. There are nine seats on the Supreme Court. There have been fifteen Prime Ministers of the United Kingdom since 1952.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 32,
+  "question": "Could Quartz be useful to humans if plants died off and there was no oxygen?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 129.5965940952301,
+  "facts": "Plants produce oxygen which is needed by humans to survive. Quartz is a hard mineral substance made of several elements. Quartz is composed of silicon and oxygen. Quartz can be melted at high temperatures.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 33,
+  "question": "If Goofy were a pet, would he need heartworm prevention?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 40.69242882728577,
+  "facts": "Goofy is an anthropomorphic dog character.  Dogs require regular heartworm prevention. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 34,
+  "question": "Is there a Harry Potter character named after Florence?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 91.42026877403259,
+  "facts": "Firenze is the native Italian form of the name Florence. There is a centaur who appars as a minor character in the Harry Potter series named Firenze. Firenze appears in three of the Harry Potter books but only one movie.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 35,
+  "question": "Did University of Pittsburgh founder have great deal in common with Judith Sheindlin?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 367.97053503990173,
+  "facts": "Hugh Henry Brackenridge founded University of Pittsburgh in 1787. Judith Sheindlin is a judge, lawyer, and author. Hugh Henry Brackenridge was a writer, lawyer, judge, and Justice of the Supreme Court of Pennsylvania.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 36,
+  "question": "Would the operating system of a Samsung Galaxy 1 sound edible?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 81.6559464931488,
+  "facts": "The first Samsung Galaxy device ran a version of Android from 2009. In 2009, the Android edition was called \"cupcake.\" ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 37,
+  "question": "Are Brian Cranston and Saoirse Ronan's combined Emmy Awards a prime number?",
+  "correct_answer": "no",
+  "agent_resp": "yes",
+  "is_correct": false,
+  "time_elapsed": 99.83394980430603,
+  "facts": "Brian Cranston has won 6 Emmy Awards. Saoirse Ronan has won 0 Emmy awards. 6 is divisible by the following numbers: 1,2,3, and 6.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 38,
+  "question": "Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 234.43964648246765,
+  "facts": "Roll call is when teachers call the names of students and they raise their hand to show they are present. The founder of Redenbacher popcorn was Orville Redenbacher. Reggae musician Shaggy was born Orville Richard Burrell.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 39,
+  "question": "Are sables related to wolverines?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 84.199702501297,
+  "facts": "The sable is a species of marten, which make up the genus Martes. Wolverines are from the genus Gulo. Both the Martes and the Gulo are from the family Mustelidae.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 40,
+  "question": "Do human sacrums have more fused vertebrae than an Alaskan Malamute?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 55.4186897277832,
+  "facts": "The human sacrum consists of five fused vertebrae. An Alaskan Malamute is a large domestic dog breed. Dogs have three fused vertebrae attached to their sacrums.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 41,
+  "question": "Can you see the Statue of Freedom from the Statue of Liberty?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 150.59894466400146,
+  "facts": "The Statue of Freedom is in Washington, D.C. on the Capitol Building The Statue of Liberty is in New York City",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 42,
+  "question": "Would you spend less on your food at Aldi than at Whole Foods?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 143.46986937522888,
+  "facts": "Whole Foods is known for costing 10-20% more than other stores. Aldi is known for having deeply discounted food and home supplies.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 43,
+  "question": "Did the Space Race use relay batons?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 47.45026993751526,
+  "facts": "The Space Race was a competition between the USA and USSR regarding spaceflight and exploration Relay batons are used in relay races Relay races are athletic track and field events",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 44,
+  "question": "Can a traffic collision make someone a millionaire?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 51.70916771888733,
+  "facts": "Traffic collisions sometimes result in extremely expensive physical damage. Physical damage is compensated by insurance companies in the form of monetary payment. Million dollar verdicts are sometimes awarded for traffic collisions that result in major damage. ",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 45,
+  "question": "Would a body builder prefer an elk burger over a beef burger?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 352.47404646873474,
+  "facts": "Bodybuilders want to build muscle and keep fat low Elk meat is leaner than beef Elk meat has higher protein than beef Protein helps build muscle",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 46,
+  "question": "Does Rusev have to worry about human overpopulation in his homeland?",
+  "correct_answer": "no",
+  "agent_resp": "no",
+  "is_correct": true,
+  "time_elapsed": 216.97416615486145,
+  "facts": "Human overpopulation results from the birthrate exceeding the death rate in a country. Rusev is a professional wrestler who was born in Bulgaria. The population of Bulgaria decreased by .7% in 2018.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 47,
+  "question": "Would someone on antidepressants need to be cautious of some citrus fruits?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 54.70376110076904,
+  "facts": "Grapefruit is a citrus fruit. Grapefruit can cause some medications to reach unintentionally high levels in the body.  SSRI's are a medication type that can be affected by grapefruit.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 48,
+  "question": "Can lettuce result in spontaneous abortion?",
+  "correct_answer": "yes",
+  "agent_resp": "no",
+  "is_correct": false,
+  "time_elapsed": 83.80544328689575,
+  "facts": "Food-borne pathogens that can survive on lettuce include Listeria monocytogenes,  Listeria monocytogenes is the causative agent of listeriosis. The manifestations of listeriosis include intrauterine or cervical infections in pregnant women, which may result in spontaneous abortion.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 49,
+  "question": "Did earth complete at least one orbit around the sun during the Napoleonic Wars?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 118.98440408706665,
+  "facts": "Earth orbits around the Sun in 365 days. Napoleonic Wars lasted 12 years, 5 months and 4 weeks.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}
+{
+  "question_num": 50,
+  "question": "Can the Moscow Kremlin fit inside Disney Land?",
+  "correct_answer": "yes",
+  "agent_resp": "yes",
+  "is_correct": true,
+  "time_elapsed": 133.3767020702362,
+  "facts": "The Moscow Kremlin is a fortified complex in the middle of Moscow Russia. The Kremlin takes up sixty eight acres. Disney Land is an amusement park in California.  Disney Land occupies eighty five acres.",
+  "retry_count": 0,
+  "bench_attempts": 1,
+  "used_worker_tools": true,
+  "require_worker_tools": true,
+  "worker_mandate_violation": false
+}

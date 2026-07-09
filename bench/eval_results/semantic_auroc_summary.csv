@@ -1,0 +1,22 @@
+run_key,run_label,scorer_key,scorer_label,n_total,n_used,n_incorrect,n_correct,auroc,ci_low,ci_high,skipped_reason
+gsm8k,GSM8K,entropy,Semantic entropy (max),100,100,7,93,0.5552995391705069,0.3024054982817869,0.7895545314900153,
+gsm8k,GSM8K,neg_density,Neg. min density,100,100,7,93,0.7081413210445469,0.4427083333333333,0.9157894736842105,
+gsm8k,GSM8K,concern,Quality concern (any),100,100,7,93,0.5783410138248848,0.421875,0.781786941580756,
+strategyqa,StrategyQA,entropy,Semantic entropy (max),24,24,6,18,0.625,0.39375,0.8333333333333334,
+strategyqa,StrategyQA,neg_density,Neg. min density,24,24,6,18,0.8703703703703703,0.6363636363636364,1.0,
+strategyqa,StrategyQA,concern,Quality concern (any),24,24,6,18,0.7777777777777778,0.5504201680672269,0.9285714285714286,
+truthfulqa,TruthfulQA,entropy,Semantic entropy (max),90,90,51,39,0.5005027652086476,0.3805668016194332,0.628968253968254,
+truthfulqa,TruthfulQA,neg_density,Neg. min density,90,90,51,39,0.6344896933132227,0.5236625514403292,0.7451756556160317,
+truthfulqa,TruthfulQA,concern,Quality concern (any),90,90,51,39,0.610105580693816,0.5327380952380952,0.6971796140524493,
+musique,MuSiQue,entropy,Semantic entropy (max),97,97,52,45,0.4344017094017094,0.3148148148148148,0.5370926243567753,
+musique,MuSiQue,neg_density,Neg. min density,97,97,52,45,0.4700854700854701,0.3436936936936937,0.5897435897435898,
+musique,MuSiQue,concern,Quality concern (any),97,97,52,45,0.5314102564102564,0.4327651515151515,0.6295025728987993,
+hotpotqa,HotpotQA,entropy,Semantic entropy (max),100,100,46,54,0.4675925925925926,0.3593947036569987,0.5766,
+hotpotqa,HotpotQA,neg_density,Neg. min density,100,100,46,54,0.4834943639291465,0.3637093536732236,0.5973072215422277,
+hotpotqa,HotpotQA,concern,Quality concern (any),100,100,46,54,0.4830917874396135,0.3886217948717949,0.5797962648556876,
+gpqa,GPQA (diamond),entropy,Semantic entropy (max),22,22,15,7,0.4238095238095238,0.19047619047619047,0.6979166666666666,
+gpqa,GPQA (diamond),neg_density,Neg. min density,22,22,15,7,0.49047619047619045,0.2544642857142857,0.7395833333333334,
+gpqa,GPQA (diamond),concern,Quality concern (any),22,22,15,7,0.5095238095238095,0.3157894736842105,0.7053571428571429,
+mmlu_law,MMLU-Pro (law subset),entropy,Semantic entropy (max),16,16,16,0,nan,nan,nan,single class only
+mmlu_law,MMLU-Pro (law subset),neg_density,Neg. min density,16,16,16,0,nan,nan,nan,single class only
+mmlu_law,MMLU-Pro (law subset),concern,Quality concern (any),16,16,16,0,nan,nan,nan,single class only

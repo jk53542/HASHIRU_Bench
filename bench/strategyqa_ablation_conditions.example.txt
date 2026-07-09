@@ -1,0 +1,13 @@
+# One condition per line:
+#   name|ENV_A=1 ENV_B=value ENV_C=value
+#
+# IMPORTANT:
+# - Replace env var names below with the exact vars your HASHIRU app reads.
+# - Keep model switches and semantic switches together per condition.
+# - The benchmark slice (num questions + offset) is set via CLI when running the script.
+
+baseline_both_on|HASHIRU_SEMANTIC_ENABLE_ENTROPY=1 HASHIRU_SEMANTIC_ENABLE_DENSITY=1
+entropy_only|HASHIRU_SEMANTIC_ENABLE_ENTROPY=1 HASHIRU_SEMANTIC_ENABLE_DENSITY=0
+density_only|HASHIRU_SEMANTIC_ENABLE_ENTROPY=0 HASHIRU_SEMANTIC_ENABLE_DENSITY=1
+neither|HASHIRU_SEMANTIC_ENABLE_ENTROPY=0 HASHIRU_SEMANTIC_ENABLE_DENSITY=0
+both_on_stronger_workers|HASHIRU_SEMANTIC_ENABLE_ENTROPY=1 HASHIRU_SEMANTIC_ENABLE_DENSITY=1 HASHIRU_WORKER_MODEL=deepseek-r1

@@ -10,13 +10,47 @@ import requests
 from gradio_client import Client
 from google import genai
 from google.genai import types
+from benchmark_ceo_mandate import CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK
+from benchmark_trace_context import hashiru_trace_context_prefix
 
 API_KEY = ""
 random.seed(12345)
 
+# Gradio HTTP timeout (seconds). MMLU-Pro few-shot prompts are huge; default client 30s breaks under load.
+_GRADIO_TIMEOUT = float(os.environ.get("HASHIRU_BENCH_GRADIO_TIMEOUT", "3600"))
+# Optional pause after each question (WSL memory / GPU recovery).
+_INTER_Q_SLEEP = float(os.environ.get("HASHIRU_BENCH_MMLU_INTER_QUESTION_SLEEP", "0"))
+
+
+def _make_gradio_client(url: str) -> Client:
+    try:
+        return Client(url, httpx_kwargs={"timeout": _GRADIO_TIMEOUT})
+    except TypeError:
+        return Client(url)
+
+
+def _apply_mmlu_cot_limits(rows, max_examples: int, max_chars: int):
+    """
+    Slice and optionally truncate MMLU-Pro validation few-shot rows. The dataset ships one row per
+    validation question per category; using all of them repeats enormous CoT in every benchmark call.
+    """
+    if not rows:
+        return []
+    out = [dict(r) for r in rows]
+    if max_examples >= 0:
+        out = out[:max_examples]
+    if max_chars and max_chars > 0:
+        for c in out:
+            cc = c.get("cot_content") or ""
+            if isinstance(cc, str) and len(cc) > max_chars:
+                c["cot_content"] = cc[:max_chars] + "\n...[truncated for benchmark prompt size]"
+    return out
+
+
 def get_client():
     if args.model_name in ["hashiru"]:
-        client = Client("http://127.0.0.1:7860/")
+        url = os.environ.get("HASHIRU_GRADIO_URL", "http://127.0.0.1:7860/")
+        client = _make_gradio_client(url)
         client.predict(
             modeIndexes=["ENABLE_AGENT_CREATION","ENABLE_LOCAL_AGENTS","ENABLE_CLOUD_AGENTS","ENABLE_TOOL_CREATION","ENABLE_TOOL_INVOCATION","ENABLE_RESOURCE_BUDGET","ENABLE_ECONOMY_BUDGET"],
             api_name="/update_model"
@@ -27,28 +61,95 @@ def get_client():
         return client
 
 
-def call_api(client, instruction, inputs, tries=0):
+def _get_last_assistant_content(resp):
+    """Best-effort extraction of final assistant text from Gradio history."""
+    if isinstance(resp, tuple):
+        resp = resp[0]
+    if not isinstance(resp, list):
+        return ""
+    for turn in reversed(resp):
+        if not isinstance(turn, dict) or turn.get("role") != "assistant":
+            continue
+        c = turn.get("content")
+        if isinstance(c, str) and c:
+            return c
+        fr = turn.get("function_response", {})
+        out = fr.get("result", {}).get("output")
+        if out:
+            return str(out)
+    return ""
+
+
+def _is_tool_loop_guard_text(s: str) -> bool:
+    t = (s or "").lower()
+    return (
+        "tool-loop guard" in t
+        or "maximum tool rounds reached" in t
+        or "without more tool calls" in t
+    )
+
+
+def _hashiru_mmlu_scoring_text(history) -> str:
+    """
+    Build text for MMLU letter extraction: all assistant strings + tool outputs, forward order,
+    skipping the final tool-loop guard message (CEO often ends with that while worker had the MCQ).
+    """
+    if isinstance(history, tuple):
+        history = history[0]
+    if not isinstance(history, list):
+        return ""
+    parts: list[str] = []
+    for turn in history:
+        if not isinstance(turn, dict) or turn.get("role") != "assistant":
+            continue
+        c = turn.get("content")
+        if isinstance(c, str) and c.strip():
+            if not _is_tool_loop_guard_text(c):
+                parts.append(c.strip())
+        fr = turn.get("function_response", {})
+        out = fr.get("result", {}).get("output")
+        if out is not None:
+            parts.append(str(out).strip())
+    return "\n".join(p for p in parts if p)
+
+
+def call_api(client, instruction, inputs, tries=0, trace_prefix="", prompt_body=""):
     start = time.time()
     if args.model_name in ["hashiru"]:
         if tries > 3:
             print("Error: too many tries")
             return ""
-        client = Client("http://127.0.0.1:7860/")
-        client.predict(
-            modeIndexes=["ENABLE_AGENT_CREATION","ENABLE_LOCAL_AGENTS","ENABLE_CLOUD_AGENTS","ENABLE_TOOL_CREATION","ENABLE_TOOL_INVOCATION","ENABLE_RESOURCE_BUDGET","ENABLE_ECONOMY_BUDGET"],
-            api_name="/update_model"
+        # Reuse the client from evaluate(); creating a new Client every question re-fetches /config
+        # (short default timeout) and duplicates the giant MMLU prompt cost on the wire.
+        cli = client if client is not None else _make_gradio_client(
+            os.environ.get("HASHIRU_GRADIO_URL", "http://127.0.0.1:7860/")
         )
-        response, history = client.predict(
-                    message={"text": instruction + inputs, "files": []},
+        message_text = (trace_prefix + (prompt_body or (instruction + inputs))).strip()
+        response, history = cli.predict(
+                    message={"text": message_text, "files": []},
                     api_name="/chat"
                 )
-        if 'error' in response["content"]:
+        content = response.get("content", "") if isinstance(response, dict) else ""
+        if isinstance(content, str) and "error" in content.lower():
             time.sleep(60)
-            response = call_api(client, instruction, inputs, tries + 1)
+            response = call_api(
+                cli,
+                instruction,
+                inputs,
+                tries + 1,
+                trace_prefix=trace_prefix,
+                prompt_body=prompt_body,
+            )
             return response
             
         print("cost time", time.time() - start)
-        return response["content"]
+        blob = _hashiru_mmlu_scoring_text(history)
+        last = _get_last_assistant_content(history) or (response.get("content", "") if isinstance(response, dict) else "") or ""
+        if try_extract_mmlu_letter(blob):
+            return blob
+        if try_extract_mmlu_letter(last):
+            return last
+        return (blob + "\n" + last).strip() or last
     elif args.model_name in ["flash2.0"]:
         safety_settings = [
             {
@@ -131,25 +232,47 @@ def format_example(question, options, cot_content=""):
     return example
 
 
-def extract_answer(text):
-    pattern = r"answer is \(?([A-J])\)?"
-    match = re.search(pattern, text)
-    if match:
-        return match.group(1)
-    else:
-        print("1st answer extract failed\n" + text)
-        return extract_again(text)
+def try_extract_mmlu_letter(text: str):
+    """Return A–J if found, else None (no logging)."""
+    if not text or not str(text).strip():
+        return None
+    t = str(text)
+    m = re.search(r"answer\s+is\s*\(?([A-Ja-j])\)?", t)
+    if m:
+        return m.group(1).upper()
+    m = re.search(r"(?:^|[\n.])\s*answer\s*:\s*\(?([A-Ja-j])\)?", t, re.MULTILINE)
+    if m:
+        return m.group(1).upper()
+    m = re.search(r"\boption\s*\(?([A-Ja-j])\)?\b", t, re.IGNORECASE)
+    if m:
+        return m.group(1).upper()
+    return None
+
+
+def extract_answer(text, verbose=True):
+    direct = try_extract_mmlu_letter(text)
+    if direct:
+        return direct
+    if verbose:
+        clip = (text or "")[:2500]
+        print("1st answer extract failed\n" + clip)
+    return extract_again(text)
 
 
 def extract_again(text):
-    match = re.search(r'.*[aA]nswer:\s*([A-J])', text)
+    direct = try_extract_mmlu_letter(text)
+    if direct:
+        return direct
+    match = re.search(r'.*[aA]nswer:\s*([A-Ja-j])', text)
     if match:
-        return match.group(1)
-    else:
-        return extract_final(text)
+        return match.group(1).upper()
+    return extract_final(text)
 
 
 def extract_final(text):
+    direct = try_extract_mmlu_letter(text)
+    if direct:
+        return direct
     pattern = r"\b[A-J]\b(?!.*\b[A-J]\b)"
     match = re.search(pattern, text, re.DOTALL)
     if match:
@@ -167,7 +290,10 @@ def single_request(client, single_question, cot_examples_dict, exist_result):
             return pred, each["model_outputs"], exist
     exist = False
     category = single_question["category"]
-    cot_examples = cot_examples_dict[category]
+    full_cot = cot_examples_dict[category]
+    cot_examples = _apply_mmlu_cot_limits(
+        full_cot, args.max_cot_examples, args.max_cot_chars
+    )
     question = single_question["question"]
     options = single_question["options"]
     # prompt = (
@@ -177,14 +303,31 @@ def single_request(client, single_question, cot_examples_dict, exist_result):
     #         "Deep-research and answer the question always and then output the answer in the format of "
     #         "\"The answer is (X)\" at the end.\n\n"
     #     )
-    prompt = prompt = "The following are multiple choice questions (with answers) about {}. Think step by" \
+    prompt = "The following are multiple choice questions (with answers) about {}. Think step by" \
              " step and then output the answer in the format of \"The answer is (X)\" at the end.\n\n" \
         .format(category)
     for each in cot_examples:
         prompt += format_example(each["question"], each["options"], each["cot_content"])
     input_text = format_example(question, options)
+    task_body = (
+        f"{CEO_FORCE_AGENTS_PREFIX_DELEGATE_THEN_TASK}\n"
+        f"{prompt}{input_text}"
+    )
+    trace_prefix = hashiru_trace_context_prefix(
+        benchmark_name="mmlu_pro",
+        question_index=int(single_question.get("_bench_index", 0)),
+        question_id=str(single_question.get("question_id", "")),
+        bench_attempt=1,
+        question_text=(question or "")[:2500],
+    )
     try:
-        response = call_api(client, prompt, input_text)
+        response = call_api(
+            client,
+            prompt,
+            input_text,
+            trace_prefix=trace_prefix,
+            prompt_body=task_body,
+        )
         response = response.replace('**', '')
     except Exception as e:
         print("error", e)
@@ -257,12 +400,31 @@ def evaluate(subjects):
         subjects = resolved if resolved else available
     print("assigned subjects", subjects)
     for subject in subjects:
+        full_dev = dev_df[subject]
+        limited = _apply_mmlu_cot_limits(
+            full_dev, args.max_cot_examples, args.max_cot_chars
+        )
+        print(
+            f"[{subject}] MMLU-Pro few-shot: {len(limited)}/{len(full_dev)} validation examples "
+            f"(max_cot_examples={args.max_cot_examples}, max_cot_chars={args.max_cot_chars})"
+        )
         test_data = test_df[subject]
+        if args.offset > 0 or args.num_samples is not None:
+            start = max(0, int(args.offset))
+            end = len(test_data) if args.num_samples is None else min(
+                len(test_data), start + max(0, int(args.num_samples))
+            )
+            test_data = test_data[start:end]
+            print(
+                f"[{subject}] evaluating sliced range start={start}, end={end}, n={len(test_data)} "
+                f"(subject_total={len(test_df[subject])})"
+            )
         output_res_path = os.path.join(args.output_dir, subject + "_result.json")
         output_summary_path = os.path.join(args.output_dir, subject + "_summary.json")
         res, category_record = update_result(output_res_path)
 
-        for each in tqdm(test_data):
+        for idx, each in enumerate(tqdm(test_data), start=1):
+            each["_bench_index"] = idx
             label = each["answer"]
             category = subject
             pred, response, exist = single_request(client, each, dev_df, res)
@@ -283,6 +445,8 @@ def evaluate(subjects):
                 save_res(res, output_res_path)
                 save_summary(category_record, output_summary_path)
                 res, category_record = update_result(output_res_path)
+                if _INTER_Q_SLEEP > 0:
+                    time.sleep(_INTER_Q_SLEEP)
         save_res(res, output_res_path)
         save_summary(category_record, output_summary_path)
 
@@ -325,8 +489,33 @@ if __name__ == "__main__":
     parser.add_argument("--assigned_subjects", "-a", type=str, default="all",
                         help="Comma-separated subject names, or 'all'. Use --list_subjects to print valid names.")
     parser.add_argument("--list_subjects", action="store_true", help="Load dataset and print available subject names, then exit.")
+    parser.add_argument("--num_samples", type=int, default=None,
+                        help="Maximum number of questions per selected subject (default: all).")
+    parser.add_argument("--offset", type=int, default=0,
+                        help="Start index within each selected subject (default: 0).")
+    parser.add_argument(
+        "--max_cot_examples",
+        type=int,
+        default=None,
+        help="Max validation few-shot rows per subject (each includes full CoT). "
+        "Default: HASHIRU_BENCH_MMLU_MAX_COT_EXAMPLES or 5. Use -1 for no cap (original behavior; very large prompts).",
+    )
+    parser.add_argument(
+        "--max_cot_chars",
+        type=int,
+        default=None,
+        help="Truncate each few-shot cot_content to this many characters (0=off). "
+        "Default: HASHIRU_BENCH_MMLU_MAX_COT_CHARS or 2000.",
+    )
     assigned_subjects = []
     args = parser.parse_args()
+
+    if args.max_cot_examples is None:
+        raw = os.environ.get("HASHIRU_BENCH_MMLU_MAX_COT_EXAMPLES", "5").strip()
+        args.max_cot_examples = int(raw) if raw else 5
+    if args.max_cot_chars is None:
+        raw = os.environ.get("HASHIRU_BENCH_MMLU_MAX_COT_CHARS", "2000").strip()
+        args.max_cot_chars = int(raw) if raw else 2000
 
     if args.list_subjects:
         test_df, _ = load_mmlu_pro()

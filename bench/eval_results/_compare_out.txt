@@ -1,0 +1,2 @@
+musique|HASSUM acc=0.450|HASHIRU acc=0.550|dacc=+0.100|Htime=81.2|Rtime=33.9|dtime=-47.3|Hrep=46|Hworkers=189|Rworkers=166|Hmulti=0|Rmulti=0|Hcreate=18|Rcreate=29|Honly=7|Ronly=17|both=38|neither=38
+hotpotqa|HASSUM acc=0.540|HASHIRU acc=0.680|dacc=+0.140|Htime=86.5|Rtime=37.5|dtime=-49.0|Hrep=62|Hworkers=244|Rworkers=222|Hmulti=15|Rmulti=11|Hcreate=60|Rcreate=40|Honly=3|Ronly=17|both=51|neither=29
